@@ -1,0 +1,22 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage{times}
+\usepackage{textcomp}
+\usepackage[papersize={17in, 11in}, layoutsize={12in, 9in},hoffset=2.5in,voffset=1in,showcrop, bottom=.5in,top=0.5in,inner=0.75in,outer=0.75in,twoside]{geometry}
+\usepackage{fancyhdr}
+\fancyhead{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\fancyfoot[C]{\scriptsize \textcopyright\ 2013 Naptaker. All rights reserved.}
+\fancyfoot[RO, LE] {\thepage}
+
+\usepackage{pdfpages}
+\includepdfset{pagecommand=\thispagestyle{fancy}}
+
+\begin{document}
+\includepdf [pages=1, noautoscale, offset=-2.5in 1in, keepaspectratio]{../../Score/PDF/score.pdf}
+\includepdf [pages=2, noautoscale, offset=2.5in 1in, keepaspectratio]{../../Score/PDF/score.pdf}
+\includepdf [pages=3, noautoscale, offset=-2.5in 1in, keepaspectratio]{../../Score/PDF/score.pdf}
+%\includepdf [pages=4, noautoscale, offset=2.5in 1in, keepaspectratio]{../score/score.pdf}
+%\includepdf [pages=5, noautoscale, offset=-2.5in 1in, keepaspectratio]{../score/score.pdf}
+\end{document}
