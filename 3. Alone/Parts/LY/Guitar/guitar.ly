@@ -117,22 +117,40 @@ gtrHarmony = \chordmode {
 
 }
 
-gtr = \relative c, {
+gtrRiffOne = \relative c {
+	<b fis' b>4 <b fis' b>8 <b fis' b>8 <b fis' b>8 <a e' a>4 <d a' d>8 ~ |
+	<d a' d>8 <d a' d>8 <d a' d>8 <d a' d>8 <d a' d>8 <e b' e>4. |
+	<e, cis' fis>8 <fis cis' fis>8 <fis cis' fis>8 <e cis' fis>8 <fis cis' fis>4 <e cis' fis>8 <fis cis' fis>8 ~ |
+	<fis cis' fis>8 <fis cis' fis>8 <e cis' fis>8 <f cis' fis>8 <fis cis' fis>4 r4 |
+}
+
+gtrRiffTwo = \relative c, {
+	<e b' e>4 <e b' e>8 <e b' e>8 <e b' e>8 <g d' g>4 <a e' a>8 ~ |
+	<a e' a>8 <a e' a>8 <a e' a>8 <a e' a>8 <a e' a>8 <fis cis' fis>4 <b fis' b>8 ~ |
+	<b fis' b>8 <b fis' b>8 <b fis' b>8 <b fis' b>8 <b fis' b>8 <ais eis' ais>8 <b fis' b>8 <d a' d>8 |
+	r8 <b fis' b>8 r8 <ais eis' ais>8 r8 <a e' a>8 <g d' g>4 |
+	
+	<e b' e>4 <e b' e>8 <e b' e>8 <e b' e>8 <g d' g>4 <a e' a>8 ~ |
+	<a e' a>8 <a e' a>8 <a e' a>8 <a e' a>8 <a e' a>8 fis4 <b fis' b>8 ~ |
+	<b fis' b>8 <b fis' b>8 <b fis' b>8 <b fis' b>8 <b fis' b>8 <ais eis' ais>8 <b fis' b>8 <d a' d>8 |
+	r8 <b fis' b>8 r8 <ais eis' ais>8 r8 <a e' a>8 r8 <g d' g>8 |
+	
+	<e b' e>4 <e b' e>8 <e b' e>8 <e b' e>8 <g d' g>4 <a e' a>8 ~ |
+	<a e' a>8 <a e' a>8 <a e' a>8 <a e' a>8 <a e' a>8 <fis cis' fis>4 <b fis' b>8 ~ |
+	<b fis' b>8 <b fis' b>8 <b fis' b>8 <b fis' b>8 <b fis' b>8 <ais eis' ais>8 <b fis' b>8 <d a' d>8 |
+	r8 <b fis' b>8 r8 <ais eis' ais>8 r8 <a e' a>8 <g d' g>4 |
+
+	<e b' e>4 <e b' e>8 <e b' e>8 <e b' e>8 <g d' g>4 <a e' a>8 ~ |
+	<a e' a>8 <a e' a>8 <a e' a>8 <a e' a>8 <a e' a>8 <fis cis' fis>4 r8 |
+	<fis cis' fis>4 <fis cis' fis>8 <fis cis' fis>8 <fis cis' fis>8 <fis cis' fis>8 <fis cis' fis>8 <fis cis' fis>8 |
+	<fis cis' fis>8 <g d' g>8 <g d' g>8 <g d' g>8 <g d' g>4 r4 |
+}
+
+gtr = \relative c {
 	\Key
-	\repeat "unfold" 4 { <f c' f a c f>4 <f c' f a c f>8 [ \crOn <f
-			c' f a c f>8 ] \crOff <bes f' bes d f bes>8 [ <bes f' bes d f bes>8 \crOn <f
-			c' f a c f>8 \crOff <f c' f a c f>8 ~ ] ~ ~ ~ ~ ~ | % 2
-	<f c' f a c f>8 [ <f c' f a c f>8 <f c' f a c f>8 \crOn <f c' f a c f>8 ] \crOff
-	<bes f' bes d f bes>8 [ <bes f' bes d f bes>8 <bes f' bes d f bes>8
-	\crOn <f c' f a c f>8 ] \crOff | } %9
-	<as es' as c es as>8 [ <as es' as c es as>8 <as es' as c es as>8 <as
-			es' as c es as>8 ] <as es' as c es as>8 [ <as es' as c es as>8
-	<as es' as c es as>8 <as es' as c es as>8 ] | \barNumberCheck #10
-	<g d' g b d g>8 [ <g d' g b d g>8 <g d' g b d g>8 <g d' g b d g>8 ]
-	<ges des' ges bes des ges>8 [ <ges des' ges bes des ges>8 <ges des'
-			ges bes des ges>8 <ges des' ges bes des ges>8 ] | % 11
-	R1 \break | % 12
-	R1*3 \bar "|."
+
+	\repeat "unfold" 4 { \gtrRiffOne }
+	\gtrRiffTwo
 }
 
 

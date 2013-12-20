@@ -63,22 +63,32 @@ lyricsVerseOne = {
 		Oh I fell in love to -- day
 		Ooh it was the on -- ly way
 		What else could I do
-		when I burn up for you__
-		and I melt down for you__?
-		And I burn up__ for you
+		when I burn up for you__?
+		And I melt down for you__
+		and I burn up__ for you
 		
-		Hey Su -- sie,
+		Hey Su -- zy,
 		you don't real -- ly move me.
-		Hey Su -- sie,
+		Hey Su -- zy,
 		you don't real -- ly move me, no.
 		
 		I fell in love to -- day
 		Oh it was the on -- ly way
 		What else could I do
-		when I burn up for you
-		and I melt down for you?
-		And I burn up for you
+		when I burn up for you?
+		And I melt down for you
+		and I burn up for you
 		
-		Hey Dor'thy 
+		Hey Dor'thy,
+		you can real -- ly bore me.
+		Hey__ Dor'thy,
+		you can real -- ly bore me.
+
+		I fell in love to -- day 
+		it was the on -- ly way
+		What else could I do
+		when I burn up for you?
+		And I melt down for you
+		and I burn up for you
 	}
 }
