@@ -2,7 +2,7 @@
 \include "header.ly"
 
 \layout {
-	ragged-last = ##t
+	ragged-last = ##f
 }
 
 \paper {

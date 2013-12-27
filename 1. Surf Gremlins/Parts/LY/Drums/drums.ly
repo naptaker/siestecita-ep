@@ -13,8 +13,8 @@ up = \drummode {
 	\duIntro
 	\duChorus
 	\duVerse
-%	\duSolo
-%	\duEnding
+	\duSolo
+	\duEnding
 }
 
 
@@ -24,8 +24,8 @@ down = \drummode {
 	\ddIntro
 	\ddChorus
 	\ddVerse
-%	\ddSolo
-%	\ddEnding
+	\ddSolo
+	\ddEnding
 }
 
 

@@ -127,7 +127,7 @@ gtrHarmony = \chordmode {
 	bes1 | aes4. f4 s4. |
 	bes2 d2 | aes4. f4 s4. |
 	bes2 g2 | s8 aes4 f4 s4. | s8 aes4 f4 ees4. |
-	des1 | s8 c4 ces4. s4 |
+	des1 | des8 c4 ces4. s4 |
 	
 	%% gtrVerse %%
 	bes1 | s2 des4 ees |

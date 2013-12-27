@@ -1,11 +1,12 @@
 bassVerse = \relative c {
 	\set TabStaff.minimumFret = #5
 	\repeat volta 2 {
-		\repeat percent 2 {
-			bes4 bes8 bes des\3 des\3 a\4 bes ~ |
-			bes bes bes4 des8\3 des\3 ees\3 des\3 |
-		}
-		bes4-\markup { \null \lower #3 \italic { ad lib on repeat } } bes8 bes des\3 des\3 a\4 bes ~ |
+		bes4 bes8 bes des\3 bes aes\4 bes ~ |
+		bes bes bes4 des8\3 des\3 ees\3 des\3 |
+		bes4 bes8 bes des\3 bes a\4 bes ~ |
+		bes bes bes4 des8\3 des\3 ees\3 des\3 |
+%		bes4-\markup { \null \lower #3 \italic { ad lib on repeat } } bes8 bes des\3 des\3 a\4 bes ~ |
+		bes4 bes8 bes des\3 bes aes\4 bes ~ |
 		bes bes' aes f aes f ees e |
 		f4 f8 e f aes f e ~ |
 	}

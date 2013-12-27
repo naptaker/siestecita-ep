@@ -53,13 +53,12 @@ gtrChorus = \relative c {
   
 	\set TabStaff.minimumFret = #9
 	des4 des8 des des des des des |
+	\mark \markup { \musicglyph #"scripts.coda" }
 	des
 		\set TabStaff.minimumFret = #8
 		c4
 		\set TabStaff.minimumFret = #7
-		ces4.-> r4 \once \override Score.RehearsalMark #'break-visibility =
-        #begin-of-line-invisible \mark \markup { \musicglyph #"scripts.coda" } |
-		\pageBreak 
+		ces4.-> r4 |
 }
 
 
@@ -116,14 +115,10 @@ gtrChorusStacked = \relative c {
   
 	\set TabStaff.minimumFret = #9
 	<des aes' des f>4 <des aes' des f>8 <des aes' des f> <des aes' des f> <des aes' des f> <des aes' des f> <des aes' des f> |
+	\mark \markup { \musicglyph #"scripts.coda" }
 	<des aes' des f>
 		\set TabStaff.minimumFret = #8
 		<c\6 g'\5 c\4 e\3>4
 		\set TabStaff.minimumFret = #7
 		<ces\6 ges'\5 ces\4 ees\3>4.-> r4 |
-
-
-	\once \override Score.RehearsalMark #'break-align-symbols = #'(staff-bar)
-	\once \override Score.RehearsalMark #'self-alignment-X = #right
-	\mark \markup { \musicglyph #"scripts.coda" }
 }

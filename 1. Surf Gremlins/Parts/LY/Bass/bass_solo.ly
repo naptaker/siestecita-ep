@@ -1,6 +1,6 @@
 bassSolo = \relative c {
 	\repeat percent 2 {
-		bes'4 bes8 bes bes4 bes8 bes |
+		bes'4 bes4. bes4. |
 		bes4. bes4-> bes8 bes aes |
 	}
 	\set TabStaff.minimumFret = #4
