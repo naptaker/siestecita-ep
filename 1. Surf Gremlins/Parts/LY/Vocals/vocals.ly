@@ -33,8 +33,7 @@ voxChorusOne = \relative c'' {
 	aes4 r4 r2 |
 	r2 r8 aes8 aes8 aes8 |
 	aes4 r2 r8 aes8 |
-	aes4 r4 r2 \xNotesOff |
-	R1 | \break
+	aes4 r4 r2 \xNotesOff | \stopStaff
 }
 
 voxChorusTwo = \relative c'' {
@@ -45,7 +44,7 @@ voxChorusTwo = \relative c'' {
 	<bes d>4 <bes d>4 <bes d>8 <bes d>4 <bes d>8 ~ |
 	<bes d>8 <bes d>4 <bes d>8 <des f>4 <ees g>4 |
 	f4 r4 r2 | R1 |
-	\xNotesOn aes,8 aes8 aes8 aes8 \xNotesOff r2 |
+	\xNotesOn aes,8 aes8 aes8 aes8 \xNotesOff r2 | \break
 }
 
 lyricsVerseOne = {
