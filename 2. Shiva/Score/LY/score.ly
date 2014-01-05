@@ -4,7 +4,7 @@
 	ragged-last = ##t
 }
 
-#(set-default-paper-size "letter" 'landscape)
+#(set-default-paper-size "arch a" 'landscape)
 \include "../../Parts/LY/Guitar/guitar.ly"
 \include "../../Parts/LY/Bass/bass.ly"
 \include "../../Parts/LY/Drums/drums.ly"
