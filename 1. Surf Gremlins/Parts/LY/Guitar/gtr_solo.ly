@@ -5,7 +5,7 @@ gtrSolo = \relative c {
 		f\5 aes4\4-> r des,8\5 ees\5 des\5 |
 	bes4\6-> aes'\4-. \grace { \fretMagic aes8\4 \glissando s } bes8\4 aes\4 f\5( e\5) |
 		f\5 aes4\4-> des,\5-> des8\5 ees\5 des\5 |
-bes4\6-> aes'\4-. \grace { \fretMagic aes8\4 \glissando s } bes8\4 aes\4 f\5( e\5 |
+	bes4\6-> aes'\4-. \grace { \fretMagic aes8\4 \glissando s } bes8\4 aes\4 f\5( e\5 |
 	f\5) aes\4 bes\4 bes,\5-> r2 |
 
 	\break
@@ -26,5 +26,5 @@ bes4\6-> aes'\4-. \grace { \fretMagic aes8\4 \glissando s } bes8\4 aes\4 f\5( e\
 	f8\2( e\2 ees\2 e\2) f\2->( e\2 ees\2 f\2->) ~ |
 	f\2( e\2 ees\2 e\2 f\2) aes\1 f\2( e\2) |
 	f\2-> (e\2 ees\2 e\2) f\2 aes\1 f\2 bes\1-> ~ |
-	bes4\1 des\1-. \grace { \fretMagic des16\1 \glissando s } ees4\1-\staccatissimo r^\mark \markup { \center-column { \bold{"D.S. alla coda"} \italic { \small "play both endings"} } }\bar "||" \stopStaff \hideNotes
+	bes4\1 des\1-. \grace { \fretMagic des16\1 \glissando s } ees4\1-\staccatissimo r \mark \markup { \center-column { \bold{"D.S. alla coda"} \italic { \small "play both endings"} } } \bar "||" \stopStaff \hideNotes
 }

@@ -1,3 +1,4 @@
+\include "../../../../include/bend.ly"
 \include "../../Parts/LY/Bass/bass_intro.ly"
 \include "../../Parts/LY/Bass/bass_chorus.ly"
 \include "../../Parts/LY/Bass/bass_verse.ly"

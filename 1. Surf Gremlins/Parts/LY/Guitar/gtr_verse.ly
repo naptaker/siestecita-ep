@@ -50,7 +50,7 @@ gtrVerse = \relative c {
 		ces4.
 		\once \override Score.RehearsalMark #'break-align-symbols = #'(staff-bar)
 	\once \override Score.RehearsalMark #'self-alignment-X = #right
-	r4^\mark \markup { \bold "D.S." } \bar "||"
+	r4 \mark \markup { \bold "D.S." } \bar "||"
 }
 
 gtrVerseStacked = \relative c {
