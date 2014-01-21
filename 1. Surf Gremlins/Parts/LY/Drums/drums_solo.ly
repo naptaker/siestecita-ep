@@ -5,7 +5,10 @@ duSolo = \drummode {
 	}
 	cymc16 sn sn8:16 \repeat percent 3 { sn4:16 } |
 	\repeat volta 2 {
-		s1*4
+		cymc4 <sn cymr>8 cymr cymr cymr <sn cymr> cymr |
+		cymr8 cymr <sn cymr> <sn cymr> cymc4 <sn cymc>8 sn:16 |
+		cymc4 <sn cymr>8 cymr cymr cymr <sn cymr> cymr |
+		cymr8 cymr <sn cymr> cymr <sn cymc>16 sn sn sn toml toml toml tomfh |
 	}
 	
 	s1*8
@@ -23,8 +26,12 @@ ddSolo = \drummode {
 	bd8\repeatTie bd bd4:8 \hideNotes bd8 bd bd bd \unHideNotes|
 	
 	\repeat volta 2 {
-		s1*4
+		bd2 r8 bd4 bd8 ~ |
+		bd8 bd4 bd8 bd bd bd bd |
+		bd2 r8 bd4 bd8 ~ |
+		bd8 bd4 bd8 bd4 bd |
 	}
 	
+	% this part is a lot like the verse part, except with eighth note ride instead of the pedal hat
 	s1*8
 }
