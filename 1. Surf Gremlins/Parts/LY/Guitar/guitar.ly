@@ -155,12 +155,13 @@ gtr = \relative c {
 
 gtrTab = \relative c {
 	\Key
+	\override Staff.Clef #'stencil = ##f
 	
 	\gtrIntro
 	R1*11 % \gtrChorus
-	R1*11 % \gtrVerse
+	R1*9 s1*2 % \gtrVerse
 	\gtrSolo
-	r4 % \gtrEnding
+	\gtrEndingStacked
 }
 
 gtrStrum = \relative c {
@@ -168,11 +169,11 @@ gtrStrum = \relative c {
 	R1*8 %gtrIntro
 	\gtrChorus
 	\gtrVerse
-	R1*8
+	s1*8
 	\repeat volta 2 {
-		R1*4
+		s1*4
 	}
-	R1*8
+	s1*8
 	\gtrEnding
 }
 

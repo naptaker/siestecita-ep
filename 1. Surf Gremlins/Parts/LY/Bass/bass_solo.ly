@@ -22,12 +22,12 @@ bassSolo = \relative c {
 	bes8 bes aes( bes) des bes aes( a) |
 	
 	\repeat volta 2 {
-		\repeat percent 2 {
+		\repeat unfold 2 {
 			bes4 bes8 bes des bes aes bes ~ |
 			bes bes bes bes des des ees des |
 		}
 	}
-	\repeat percent 4 {
+	\repeat unfold 4 {
 		bes4 bes8 bes des bes aes bes ~ |
 		bes bes bes bes des des ees des |
 	}	

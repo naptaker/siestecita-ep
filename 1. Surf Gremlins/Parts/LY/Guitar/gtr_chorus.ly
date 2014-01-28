@@ -120,5 +120,5 @@ gtrChorusStacked = \relative c {
 		\set TabStaff.minimumFret = #8
 		<c\6 g'\5 c\4 e\3>4
 		\set TabStaff.minimumFret = #7
-		<ces\6 ges'\5 ces\4 ees\3>4.-> r4 | \stopStaff \hideNotes
+		<ces\6 ges'\5 ces\4 ees\3>4.-> r4 |
 }

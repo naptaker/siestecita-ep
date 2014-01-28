@@ -51,34 +51,22 @@
 				\new RhythmicStaff \with {
 					\RemoveEmptyStaves
 					\override VerticalAxisGroup #'remove-first = ##t
-				} { \Tempo \clef "treble_8" \GuitarStrum }
+				} { \Tempo \GuitarStrum }
 				\new TabStaff \with {
 					\RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
 				} { \tabFullNotation \GuitarTab }
 			>>
 			
-%			\new StaffGroup <<
 				\new Staff \with {
 					\RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
 				}
 				{ \Tempo \clef bass \bassGuitar }
-%				\new TabStaff \with {
-%					\RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
-%				} {
-%					\set TabStaff.stringTunings = #bass-tuning
-%					\transpose c c, \bassGuitar
-%				}
-%			>>
 		\new DrumStaff = "drums" \theDrums
 		>>
 	>>
 
 	\layout {
 		indent = 0\in
-		\context { \Score
-%							 \consists #(bars-per-line-engraver '(8))
-%							 \scoreMagic
-		}
 		\context {
 			\Staff
 			\override StringNumber #'stencil = ##f
@@ -94,7 +82,7 @@
 		}
 		<<
 			\new StaffGroup <<
-				\new Staff { \Tempo \clef "treble_8" \Guitar }
+				\new Staff { \Tempo \Guitar }
 			>>
 			\new StaffGroup <<
 				\new Staff { \transposition c \Tempo \clef bass \bassGuitar }

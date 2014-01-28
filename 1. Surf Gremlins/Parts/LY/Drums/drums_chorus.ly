@@ -2,7 +2,7 @@ voltaFirst = \markup { 1. \text \italic { play 1x and 4x only } }
 
 duChorus = \drummode {
 	\set Score.repeatCommands = #'(start-repeat)
-	\repeat percent 2 {
+	\repeat unfold 2 {
 		cymc4 <sn hhho>8 hhho8 hhho8 hhho8 <sn hhho>8 <sn hhho>16 sn16 |
 		cymc4 <sn hhc>8 cymc4. sn16 sn sn8:16 |
 	}
@@ -24,7 +24,7 @@ duChorus = \drummode {
 
 ddChorus = \drummode {
 	\set Score.repeatCommands = #'(start-repeat)
-	\repeat percent 2 {
+	\repeat unfold 2 {
 		bd4. bd4 bd bd8 |
 		bd4. bd4 bd bd8 |
 	}

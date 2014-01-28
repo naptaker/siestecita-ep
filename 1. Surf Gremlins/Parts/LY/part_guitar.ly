@@ -15,7 +15,7 @@
 				\set StaffGroup.instrumentName = #"Guitar"
 				\new Staff {
 					\override StringNumber #'stencil = ##f
-					\Tempo \clef "treble_8" \Guitar
+					\Tempo \Guitar
 				}
 				\new TabStaff { \tabFullNotation \GuitarTab }
 			>>
