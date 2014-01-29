@@ -21,7 +21,7 @@ voxVerse = \relative c' {
 	aes4 aes8 f8 ~ f4 r4 |
 	
 	aes4 aes8 f8 ~ f4 \xNotesOn aes'8 aes8 |
-	aes8 aes8 r4 r2 | \pageBreak
+	aes8 aes8 r4 r2 |
 	aes8 aes8 aes8 aes4 aes8 aes8 aes8 \xNotesOff |
 }
 
@@ -44,7 +44,7 @@ voxChorusTwo = \relative c'' {
 	<bes d>4 <bes d>4 <bes d>8 <bes d>4 <bes d>8 ~ |
 	<bes d>8 <bes d>4 <bes d>8 <des f>4 <ees g>4 |
 	f4 r4 r2 | R1 |
-	\xNotesOn aes,8 aes8 aes8 aes8 \xNotesOff r2 | \break
+	\xNotesOn aes,8 aes8 aes8 aes8 \xNotesOff r2 |
 }
 
 lyricsVerseOne = {

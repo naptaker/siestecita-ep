@@ -11,14 +11,14 @@
 	<<
 		<<
 %			\new ChordNames = "chords" \gtrHarmony
-			\new StaffGroup <<
+%			\new StaffGroup <<
 				\set StaffGroup.instrumentName = #"Guitar"
 				\new Staff {
 					\override StringNumber #'stencil = ##f
 					\Tempo \Guitar
 				}
-				\new TabStaff { \tabFullNotation \GuitarTab }
-			>>
+%				\new TabStaff { \tabFullNotation \GuitarTab }
+%			>>
 		>>
 	>>
 

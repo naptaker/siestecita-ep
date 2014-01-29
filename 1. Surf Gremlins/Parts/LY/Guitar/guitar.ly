@@ -161,7 +161,7 @@ gtrTab = \relative c {
 	R1*11 % \gtrChorus
 	R1*9 s1*2 % \gtrVerse
 	\gtrSolo
-	\gtrEndingStacked
+	\gtrEnding
 }
 
 gtrStrum = \relative c {
@@ -174,7 +174,7 @@ gtrStrum = \relative c {
 		s1*4
 	}
 	s1*8
-	\gtrEnding
+%	\gtrEnding
 }
 
 %showLastLength = R1*10
@@ -186,7 +186,7 @@ Guitar = {
 
 GuitarTab = {
 	\set Staff.midiInstrument = #"electric guitar (clean)"
-	\global \clef "treble_8" << \gtrTab >>
+	\global \gtrTab
 }
 
 GuitarStrum = {

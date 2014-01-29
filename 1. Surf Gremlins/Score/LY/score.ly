@@ -10,7 +10,7 @@
   system-system-spacing #'padding = #11
 }
 
-#(set-global-staff-size 11)
+#(set-global-staff-size 14)
 %#(set-default-paper-size "arch a" 'landscape)
 \include "../../Parts/LY/Guitar/guitar.ly"
 \include "../../Parts/LY/Bass/bass.ly"
@@ -47,7 +47,7 @@
 			>>
 			\new ChordNames = "chords" \gtrHarmony
 			\new FretBoards { \gtrHarmony }
-			\new StaffGroup <<
+%			\new StaffGroup <<
 				\new RhythmicStaff \with {
 					\RemoveEmptyStaves
 					\override VerticalAxisGroup #'remove-first = ##t
@@ -55,7 +55,7 @@
 				\new TabStaff \with {
 					\RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
 				} { \tabFullNotation \GuitarTab }
-			>>
+%			>>
 			
 				\new Staff \with {
 					\RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
