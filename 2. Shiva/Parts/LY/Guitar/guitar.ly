@@ -173,6 +173,21 @@ gtrHarmony = \chordmode {
 	s1 |
 	a4 s8 s s b4 fis8 |
 	s1 |
+
+	s1*50
+
+	d4 s b8 s4 fis8:min |
+	s8 fis s s4 s8 s s |
+	a4 s8 s s b4 fis8 |
+	s1 |
+	d4 s b8 s4 fis8:min |
+	s8 fis s s4 s8 s s |
+	a4 s8 s s b4 fis8 |
+	s1 |
+	a4 s8 s s b4 fis8 |
+	s1 |
+	a4 s8 s s b4 fis8 |
+	s4 |
 }
 
 gtrBridge = \relative c {
@@ -221,6 +236,9 @@ gtrChorus = \relative c' {
 	a4 a8 a8 a8 b4 fis8 ~ |
 	fis8 fis8 fis8 fis8 fis8 eis8 e8 eis8 |
 	a4 a8 a8 a8 b4 fis8 ~ |
+}
+
+gtrChorusEnding = \relative c {
 	fis4 r4 r2 | \break
 	\improvisationOff
 }
@@ -246,36 +264,49 @@ gtrSolo = \relative c'' {
 %	fis4 \ottava #0 r4 r2 |	
 }
 
-gtrEnding = \relative c' {
-	R1*8 | R1*8 | R1*8 |
-	fis2 ~ fis8 cis8 fis8 c8 ~ |
-	c1 |
-	r4 fis,8 fis8 a8 b4 fis8 |
-	c'8( b8 a8) fis4 fis8 a8 fis8 |
-	fis'2 ~ fis8 cis8 fis8 c8 ~ |
-	c1 |
-	r4 a4 a8 b4 fis8 |
-	c'8( b8 a8) fis4. r4 |
-	fis'2 ~ fis8 cis8 fis8 c8 ~ |
-	c1 |
-	r4 fis4 a8 b4 fis8 |
-	c'8( b8 a8) fis4 fis8 a4 |
-	fis2 ~ fis8 cis8 fis8 c8 ~ |
-	c1 |
-	r4 fis4 a8 b4 fis8 |
-	c'8( b8 a8) fis4 fis8 a8 fis8 ~ |
+gtrEnding = \relative c {
+	R1*8 | \break
+	
+	\override Staff.TimeSignature #'stencil = ##f
+	\time 8/1
+	\autoBeamOff
+	\repeat volta 2 {
+		r\longa
+	}
+	\time 4/4
+	\autoBeamOn
+	
+	R1*8 \break
+
+	\repeat unfold 2 {
+		fis2 ~ fis8 cis8 fis8 c8 ~ |
+		c1 ~ |
+		c4 fis,8 fis8 a8 b4 a8 |
+		c8( b8 a8) fis4 fis8 a8 fis8 |
+	}
+
+	\repeat unfold 2 {
+		fis'2 ~ fis8 cis8 fis8 c8 ~ |
+		c1 ~ |
+		c4 fis4 a8 b4 a8 |
+		c8( b8 a8) fis4 fis8 a4 |
+	}
+	
 	fis8 fis8 a8 fis4 fis8 a8 fis8 ~ |
 	fis8 fis8 a8 fis8 fis8 eis8 e8 eis8 |
 	fis8 fis8 a8 fis4 fis8 a8 fis8 ~ |
 	fis8 fis8 a8 b8 c8( b8) a4 ~ |
-	a8 fis8 a8 fis4 fis8 a8 fis8 ~ |
+	fis8 fis8 a8 fis4 fis8 a8 fis8 ~ |
+	fis8 fis8 a8 fis8 fis8 eis8 e8 eis8 |
+	fis8 fis8 a8 fis4 fis8 a8 fis8 ~ |
 	fis8 fis8 a8 fis8 b8 b8 b8 a8 |
+
 	b8( c8) c8 c8 c8 c8 c8 c8 |
 	c8( cis8) cis8 cis8 cis8 cis8 cis8 b8 |
 	cis4 cis8 cis8 cis8 cis8 cis8 cis8 |
 	cis4 cis8 cis8 cis8 cis8 c8 c8 |
 	cis4 cis8 cis8 cis8 cis8 cis8 cis8 |
-	cis8 cis8 cis8 cis8 cis8 cis8 e4 \bar "|."
+	cis8 cis8 cis8 cis8 cis8 cis8 e4 |
 }
 
 gtr = \relative c {
@@ -295,10 +326,9 @@ gtr = \relative c {
 	\break
 	R1*8 % \gtrVerse
 	R1*12 % \gtrChorus
-%	\break
-%	\gtrEnding
-%	\break
-%	R1*10 % \gtrChorus
+	\break
+	\gtrEnding
+	\break
 }
 
 
@@ -319,15 +349,16 @@ GuitarStrum = {
 			R1*10
 			\gtrVerse
 			\pageBreak
-			\gtrChorus
+			\gtrChorus \gtrChorusEnding
 			R1*8
 			\gtrVerse
-			\gtrChorus
+			\gtrChorus \gtrChorusEnding
 			R1*8
 			\gtrVerse
+			\gtrChorus \gtrChorusEnding
+			R1*50
 			\gtrChorus
-%			R1*52
-%			\gtrChorus
+			R1 \bar "|."
 		}
 	>>
 }

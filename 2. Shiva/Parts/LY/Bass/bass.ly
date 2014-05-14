@@ -39,12 +39,46 @@ bassChorus = \relative c {
 	a4 a8 a8 a8 b4 fis8 ~ |
 }
 
-bassChorusEnding = \relative c {
+bassChorusEnding = \relative c, {
 	fis8 fis8 fis8 fis'4 fis8 fis4 |
 }
 
 bassEnding = \relative c {
-	fis4 r4 r2 \bar "|."
+	R1*8
+	
+	\override Staff.TimeSignature #'stencil = ##f
+	\time 8/1
+	\autoBeamOff
+	\repeat volta 2 {
+		fis,\longa:8
+	}
+	\time 4/4
+	\autoBeamOn
+
+	\repeat unfold 3 {
+		\repeat unfold 2 {
+			\repeat percent 2 {
+				fis'8 fis fis fis fis e4 a,8 ~ |
+				a8 a a a a b b b |
+			}
+		}
+	}
+	
+	\repeat unfold 2 {
+		\repeat percent 2 {
+			fis'8 fis fis fis fis e4 a,8 ~ |
+			a8 a a a a b b b |
+		}
+	}
+	fis'8 fis fis fis fis e4 a,8 ~ |
+	a8 a a a a b b b |
+	
+	\repeat percent 4 {
+		fis1:8
+	}
+
+	\bassChorus
+	R1 \bar "|."
 }
 
 
@@ -59,7 +93,9 @@ bgtr = \relative c {
 	\bassChorus \bassChorusEnding
 	\bassBridge
 	\bassVerse
-	\bassChorus \bassEnding
+	\bassChorus
+	fis4 r4 r2 |
+	\bassEnding
 }
 
 %showLastLength = R1*24

@@ -71,7 +71,44 @@ theMelody = \relative c' {
 	r2 r4 r8 gis8 |
 	ais4 gis8 ais4 b8 cis8( ais8) |
 	r2 r4 r8 gis8 |
-	ais4 ais8 ais8( gis8) fis8 fis4 \bar "|."
+	ais4 ais8 ais8( gis8) fis8 fis4
+
+	R1*8
+	\override Staff.TimeSignature #'stencil = ##f
+	\time 8/1
+	\autoBeamOff
+	\repeat volta 2 {
+		r\longa
+	}
+	\time 4/4
+	\autoBeamOn
+
+	\repeat unfold 3 {
+			fis1 ~ |
+			fis2( gis2)( |
+			a1) ~ |
+			a2)( b2)( |
+			cis1) ~ |
+			cis2( b8)( cis4)( b8)( |
+			a1) ~ |
+			a2( gis2) |
+	}
+
+	R1*8
+	R1*6
+
+	R1*1 |
+	r8 cis8 cis8 cis8 e4 cis4 |
+	cis4 r4 r2 |
+	r8 ais8 ais8 ais8 ais4 b4 |
+	cis4 r4 r2 |
+	r4 cis8 cis8 e8 fis4 cis8 ~ |
+	cis4 r2 r8 gis8 |
+	ais4 gis8 ais4 b8 cis8( ais8) |
+	r2 r4 r8 gis8 |
+	ais4 gis8 ais4 b8 cis8( ais8) |
+	r2 r4 r8 gis8 |
+	ais4 ais8 ais8( gis8) fis8 fis4
 }
 
 theLyrics = {
@@ -119,6 +156,22 @@ theLyrics = {
 		you can real -- ly bore me.
 	}
 	
+	\set stanza = #"Chorus: "
+	\lyricmode {
+		I fell in love to -- day 
+		it was the on -- ly way
+		What else could I do
+		when I burn up for you?
+		And I melt down for you
+		and I burn up for you
+	}
+
+	\lyricmode {
+		Oo __
+		Oo __
+		Oo __
+	}
+
 	\set stanza = #"Chorus: "
 	\lyricmode {
 		I fell in love to -- day 

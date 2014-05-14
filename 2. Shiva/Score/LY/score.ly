@@ -1,10 +1,21 @@
 \include "../../../../include/preamble.ly"
 \include "header.ly"
+
 \layout {
 	ragged-last = ##t
 }
 
-#(set-default-paper-size "arch a" 'landscape)
+\paper {
+%	system-system-spacing #'minimum-distance = #6
+%  system-system-spacing #'padding = #5
+	top-margin = 0.75\in
+	left-margin = 0.5\in
+	right-margin = 0.5\in
+	bottom-margin = 0.75\in
+}
+
+#(set-global-staff-size 11)
+#(set-default-paper-size "arch a" 'portrait)
 \include "../../Parts/LY/Guitar/guitar.ly"
 \include "../../Parts/LY/Bass/bass.ly"
 \include "../../Parts/LY/Drums/drums.ly"
