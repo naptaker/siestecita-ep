@@ -76,9 +76,10 @@
 \score {
 	\unfoldRepeats \articulate
 	<<
-		\new Staff {
+%{		\new Staff {
 			\context Voice = "vocals" { \Tempo \voxVerseOne }
 		}
+%}
 		<<
 			\new StaffGroup <<
 				\new Staff { \Tempo \clef "treble_8" \Guitar }

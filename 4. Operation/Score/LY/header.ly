@@ -1,5 +1,5 @@
 \header {
-	title = "Operation: Shred"
+	title = "Operation"
 	composer = "Music by E. Bailey"
 	poet = "Words by A. Smith"
 	arranger = \markup { \column { \right-align "Arr. by S. Albers, E. Bailey" \right-align  "P. Drum, and A. Smith" } }

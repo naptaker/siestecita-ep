@@ -1,34 +1,39 @@
 % http://lsr.dsi.unimi.it/LSR/Snippet?id=664
-toSegno = {
-	% the align part, to the right, and below staff
-	\once \override Score.RehearsalMark #'self-alignment-X = #RIGHT 
+toCoda = {
+	% the align part
+	\once \override Score.RehearsalMark #'self-alignment-X = #RIGHT  
 	\once \override Score.RehearsalMark #'break-visibility = #begin-of-line-invisible
-	\once \override Score.RehearsalMark #'direction = #DOWN 
-	%prefered size, is about 1/3 smaller than normal
+	\once \override Score.RehearsalMark #'direction = #DOWN
+	%prefered size
 	\once \override Score.RehearsalMark #'font-size = #-2
-	\mark \markup { { \lower #1 "D.S. al " { \musicglyph #"scripts.segno"} } } 
+	\mark \markup {
+		\center-column {
+			\concat { \lower #1 { "D.S. al  " } { \musicglyph #"scripts.coda" } }
+			\italic { \lower #1 { \small "play both endings" } }
+		}
+	}
 }
 
 gtrVerse = \relative c {
 	\repeat volta 2 {
 		bes4 \deadNotesOn bes8 \deadNotesOff bes4
-			\deadNotesOn bes8 \deadNotesOff bes  bes ~ | \noBreak
-		bes bes bes4 des ees | \noBreak
+			\deadNotesOn bes8 \deadNotesOff bes  bes ~ |
+		bes bes bes4 des ees |
 		bes4 \deadNotesOn bes8 \deadNotesOff bes4
-			\deadNotesOn bes8 \deadNotesOff bes  bes ~ | \noBreak
-		bes bes bes4 des a | \noBreak
+			\deadNotesOn bes8 \deadNotesOff bes  bes ~ |
+		bes bes bes4 des a |
 		bes4 \deadNotesOn bes8 \deadNotesOff bes4
-			\deadNotesOn bes8 \deadNotesOff bes  bes ~ | \noBreak
-		bes bes bes4 des aes | \noBreak
-		f4 \deadNotesOn f8 \deadNotesOff f4 \deadNotesOn f8 \deadNotesOff f e ~ | \break
+			\deadNotesOn bes8 \deadNotesOff bes  bes ~ |
+		bes bes bes4 des aes |
+		f4 \deadNotesOn f8 \deadNotesOff f4 \deadNotesOn f8 \deadNotesOff f e ~ |
 	}
 	\alternative {
-		{ e8 e e e16 e e8 f f f | \noBreak }
-		{ e8\repeatTie e e e4 ees'8 ees \parenthesize ees | \noBreak }
+		{ e8 e e e16 e e8 f f f | }
+		{ e8\repeatTie e e e4 ees'8 ees \parenthesize ees | }
 	}
-	des4 des8 des des des des des | \noBreak
+	des4 des8 des des des des des |
 	des8 c4 ces4. r4 |
 %	\once \override Score.RehearsalMark #'break-align-symbols = #'(staff-bar)
 %	\once \override Score.RehearsalMark #'self-alignment-X = #right
-	\toSegno \bar "||" \stopStaff \hideNotes \pageBreak
+	\toCoda \bar "||" \stopStaff \hideNotes
 }

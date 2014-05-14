@@ -1,5 +1,5 @@
 \header {
-	title = \markup { \vspace #12 \fontsize #8  "Surf Gremlins" }
+	title = \markup { \fontsize #8  "Surf Gremlins" }
 	subtitle = \markup { \column { \center-align \fontsize #4 "from the Siestecita EP" \center-align \fontsize #2 "by Naptaker" } }
 	composer = "Music by E. Bailey"
 	poet = "Words by A. Smith"

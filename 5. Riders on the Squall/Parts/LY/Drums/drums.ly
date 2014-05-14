@@ -3,14 +3,14 @@
 	\stemUp
 
 		\repeat "unfold" 4 {
-			cymc4 <hhho sn>8 hhho hhho hhho <hhho sn> hhho | hhho hhho <hhho sn> hhho hhho hhho <hhho sn> <hhho sn> |
+			cymc4 <hhc sn>8 hhc hhc hhc <hhc sn> hhc | hhc hhc <hhc sn> hhc hhc hhc <hhc sn> <hhc sn> |
 		}
 		cymc4 <cymr sn> <cymr sn> <cymr sn> | <cymc sn> <cymr sn> <cymr sn> <cymr sn> |
 		<cymc sn>4 cymr <cymc sn> cymr | <cymc sn> <cymc sn> <cymc sn> sn16 sn sn sn |
 	\repeat "unfold" 3 {
 		\repeat "unfold" 4 {
 			cymc4 <hhc sn>8 hhc hhc hhc <hhc sn> hhc |
-			hhc hhc <hhc sn> hhho hhc hhho <hhc sn> <hhc sn> |
+			hhc hhc <hhc sn> hhc hhc hhc <hhc sn> <hhc sn> |
 		}
 		cymc4 <cymr sn> <cymr sn> <cymr sn> | <cymc sn> <cymr sn> <cymr sn> <cymr sn> |
 		<cymc sn>4 cymr <cymc sn> cymr | <cymc sn> <cymc sn> <cymc sn> sn16 sn sn sn |
@@ -18,7 +18,7 @@
 	
 % chorus
 	cymc4 <hhc sn>8 hhc hhc hhc <hhc sn> hhc |
-	hhc hhc <hhc sn> hhc hhc hhc hhc hhho |
+	hhc hhc <hhc sn> hhc hhc hhc hhc hhc |
 	<cymc sn>4. <cymc sn>4. <cymc sn>4 ~ |
 	sn8 <cymc sn>4. <cymc sn>16 sn sn sn sn sn sn sn |
 	\repeat "unfold" 2 {
@@ -26,21 +26,21 @@
 		tomfl tomfl <sn tomfl> tomfl tomfl tomfl <sn tomfl> <sn tomfl> |
 		cymr4 <cymr sn> cymr <cymr sn> | cymr <cymr sn> <cymr sn>16 sn sn sn sn sn sn sn |
 	}
-	cymc4 <hhho sn> <hhho sn> <hhho sn> | <hhho sn> <hhho sn> <hhho sn> <hhho sn> |
-	<hhho sn>4 hhho <hhho sn> hhho | <hhho sn> <hhho sn> <cymc sn> sn16 sn sn sn |
+	cymc4 <hhc sn> <hhc sn> <hhc sn> | <hhc sn> <hhc sn> <hhc sn> <hhc sn> |
+	<hhc sn>4 hhc <hhc sn> hhc | <hhc sn> <hhc sn> <cymc sn> sn16 sn sn sn |
 	
 	
 	\repeat "unfold" 3 {
 		\repeat "unfold" 4 {
 			cymc4 <hhc sn>8 hhc hhc hhc <hhc sn> hhc |
-			hhc hhc <hhc sn> hhho hhc hhho <hhc sn> <hhc sn> |		}
+			hhc hhc <hhc sn> hhc hhc hhc <hhc sn> <hhc sn> |		}
 		cymc4 <cymr sn> <cymr sn> <cymr sn> | <cymc sn> <cymr sn> <cymr sn> <cymr sn> |
 		<cymc sn>4 cymr <cymc sn> cymr | <cymc sn> <cymc sn> <cymc sn> sn16 sn sn sn |
 	}
 	
 	
 	cymc4 <hhc sn>8 hhc hhc hhc <hhc sn> hhc |
-	hhc hhc <hhc sn> hhc hhc hhc hhc hhho |
+	hhc hhc <hhc sn> hhc hhc hhc hhc hhc |
 	<cymc sn>4. <cymc sn>4. <cymc sn>4 ~ |
 	sn8 <cymc sn>4. <cymc sn>16 sn sn sn tommh tommh tomfl tomfl |
 	\repeat "unfold" 2 {
@@ -48,11 +48,11 @@
 		tomfl tomfl <sn tomfl> tomfl tomfl tomfl <sn tomfl> <sn tomfl> |
 		cymr4 <cymr sn> cymr <cymr sn> | cymr <cymr sn> <cymr sn>16 sn sn sn sn sn sn sn |
 	}
-	cymc4 <hhho sn> <hhho sn> <hhho sn> | <hhho sn> <hhho sn> <hhho sn> <hhho sn> |
-	<hhho sn>4 hhho <hhho sn> hhho | <hhho sn> <hhho sn> <cymc sn> sn16 sn sn sn |
+	cymc4 <hhc sn> <hhc sn> <hhc sn> | <hhc sn> <hhc sn> <hhc sn> <hhc sn> |
+	<hhc sn>4 hhc <hhc sn> hhc | <hhc sn> <hhc sn> <cymc sn> sn16 sn sn sn |
 	
 	cymc4 <hhc sn>8 hhc hhc hhc <hhc sn> hhc |
-	hhc hhc <hhc sn> hhc hhc hhc hhc hhho |
+	hhc hhc <hhc sn> hhc hhc hhc hhc hhc |
 	<cymc sn>4. <cymc sn>4. <cymc sn>4 ~ |
 	sn8 <cymc sn>4. <cymc sn>16 sn sn sn tommh tommh tomfl tomfl |
 	\repeat "unfold" 2 {
@@ -63,8 +63,8 @@
 	cymc4 <cymc sn> <cymc sn> <cymc sn> | <cymc sn> <cymc sn> <cymc sn> <cymc sn> |
 	<cymc sn>4 cymc <cymc sn> cymc | <cymc sn> <cymc sn> <cymc sn> sn16 sn sn sn |
 	
-	cymc4 <hhho sn>8 hhho hhho hhho <hhho sn> hhho |
-	hhho hhho <hhho sn> hhho hhho hhho hhho hhho |
+	cymc4 <hhc sn>8 hhc hhc hhc <hhc sn> hhc |
+	hhc hhc <hhc sn> hhc hhc hhc hhc hhc |
 	<cymc sn>4. <cymc sn>4. <cymc sn>4 ~ |
 	sn8 <cymc sn>4. <cymc sn>16 sn sn sn tommh tommh tomfl tomfl |
 	<cymc sn>4 s s2 |

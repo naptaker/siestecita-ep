@@ -37,7 +37,14 @@ bassChorus = \relative c {
 	a4 a8 a8 a8 b4 fis8 ~ |
 	fis8 fis8 fis8 fis4 fis8 fis4 |
 	a4 a8 a8 a8 b4 fis8 ~ |
+}
+
+bassChorusEnding = \relative c {
 	fis8 fis8 fis8 fis'4 fis8 fis4 |
+}
+
+bassEnding = \relative c {
+	fis4 r4 r2 \bar "|."
 }
 
 
@@ -46,13 +53,13 @@ bgtr = \relative c {
 	
 	\bassIntro
 	\bassVerse
-	\bassChorus
+	\bassChorus \bassChorusEnding
 	\bassBridge
 	\bassVerse
-	\bassChorus
+	\bassChorus \bassChorusEnding
 	\bassBridge
 	\bassVerse
-	\bassChorus
+	\bassChorus \bassEnding
 }
 
 %showLastLength = R1*24

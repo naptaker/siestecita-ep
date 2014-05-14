@@ -2,16 +2,20 @@
 \include "header.ly"
 
 \layout {
-	ragged-last = ##f
+	ragged-last = ##t
 }
 
 \paper {
-	system-system-spacing #'minimum-distance = #16
-  system-system-spacing #'padding = #11
+%	system-system-spacing #'minimum-distance = #6
+%  system-system-spacing #'padding = #5
+	top-margin = 0.75\in
+	left-margin = 0.5\in
+	right-margin = 0.5\in
+	bottom-margin = 0.75\in
 }
 
-#(set-global-staff-size 14)
-%#(set-default-paper-size "arch a" 'landscape)
+#(set-global-staff-size 11)
+#(set-default-paper-size "arch a" 'portrait)
 \include "../../Parts/LY/Guitar/guitar.ly"
 \include "../../Parts/LY/Bass/bass.ly"
 \include "../../Parts/LY/Drums/drums.ly"
@@ -59,8 +63,48 @@
 			
 				\new Staff \with {
 					\RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
-				}
-				{ \Tempo \clef bass \bassGuitar }
+				} <<
+	        \new Voice {
+						\overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
+	            #'((Y-offset . 5))
+	          s1*8 \break
+	          \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
+	            #'((Y-offset . 55))
+	          s1*4 \break
+	          \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
+	            #'((Y-offset . 125))
+	          s1*4 \break
+	          \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
+	            #'((Y-offset . 195))
+	          s1*3 \pageBreak
+	          \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
+	            #'((Y-offset . 15))
+	          s1*5 \break
+	          \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
+	            #'((Y-offset . 85))
+	          s1*6 \break
+	          \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
+	            #'((Y-offset . 150))
+	          s1*4 \break
+	          \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
+	            #'((Y-offset . 190))
+	          s1*4 \break
+	          \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
+	            #'((Y-offset . 230))
+	          s1*4 \break
+	          \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
+	            #'((Y-offset . 5))
+	          s1*4 \break
+	          \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
+	            #'((Y-offset . 40))
+	          s4
+	          \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
+	            #'((Y-offset . 120))
+	        }
+					\new Voice {
+						\Tempo \clef bass \bassGuitar
+					}
+				>>
 		\new DrumStaff = "drums" \theDrums
 		>>
 	>>

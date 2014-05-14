@@ -1,5 +1,5 @@
 voxVerseOne = \relative c' {
-	\set Staff.midiInstrument = #"choir aahs"
+	\set Staff.midiInstrument = #"tenor sax"
 	\global \clef treble \Key
 	
 	\stopStaff
@@ -13,8 +13,8 @@ voxVerseOne = \relative c' {
 	
 	r4 a8 b4 b4. | d8 e4 b4. r4 |
 	r4 a8 b4 b4. | d8 b4 b4. r4 |
-	r4 r8 a4 g4. | a8 g4 a 4. r4 |
-	r4 b8 b4 b4. | d8 b4 b4. r4 |
+	r4 g8 a4 g4. | a8 g4 a 4. r4 |
+	r8 b b b b b4. | d8 b4 b4. r4 |
 	c8 c c c4 c8 c g ~ | g g4 c4 r8 r4 |
 	fis,4 fis8 fis c'4 c8 c | b4 a8 a g fis4 e8 ~ |
 	e4 r r2 |
@@ -22,14 +22,14 @@ voxVerseOne = \relative c' {
 	b4 r r2 | r8 b a b d4 e4 |
 	a,4 r r2 |	r8 g a g a4 g4 |
 	b4 r r2 | r2 d,8 d4 d'8 ~ |
-	d8 c8 c8 c4. r8 g8 ~ | g8 g8 g8 c4 c8 c4. |
-	fis,8 fis4. c'8 c4. | b4 a8 a g fis4 e ~ |
+	d8 c8 c8 c4. r8 g8 ~ | g8 g8 g8 c4 c8 c4 |
+	fis,4 fis8 fis c'4 c8 c | b4 a8 a g fis4 e ~ |
 	e4 r r2 | 
 	
 }
 
 voxVerseTwo = \relative c' {
-	\set Staff.midiInstrument = #"choir aahs"
+	\set Staff.midiInstrument = #"tenor sax"
 	\global \clef bass \Key
 	
 	\stopStaff
@@ -48,9 +48,9 @@ lyricsVerseOne = {
 	\set stanza = #"1. "
 	\lyricmode {
 		A new psych -- o -- lo -- gy
-		a new bi -- o -- lo -- gy
-		per -- son -- al -- i -- ty
-		in -- divi -- u -- al -- i -- ty
+		the same bi -- o -- lo -- gy
+		two per -- son -- al -- i -- ties
+		no in -- di -- vi -- u -- al -- i -- ty
 	}
 }
 

@@ -112,47 +112,115 @@
 													 (mute 2)
 													 (mute 1))
 
-gtrHarmony = \chordmode {
-	\override FretBoards.FretBoard #'size = #'1.2
-
-}
-
 gtrRiffOne = \relative c {
-	<b fis' b>4 <b fis' b>8 <b fis' b>8 <b fis' b>8 <a e' a>4 <d a' d>8 ~ |
-	<d a' d>8 <d a' d>8 <d a' d>8 <d a' d>8 <d a' d>8 <e b' e>4. |
-	<e, cis' fis>8 <fis cis' fis>8 <fis cis' fis>8 <e cis' fis>8 <fis cis' fis>4 <e cis' fis>8 <fis cis' fis>8 ~ |
-	<fis cis' fis>8 <fis cis' fis>8 <e cis' fis>8 <f cis' fis>8 <fis cis' fis>4 r4 |
+	b4 b8 b8 b8 a4 d8 ~ |
+	d8 d8 d8 d8 d8 e4. |
+	e,8 fis8 fis8 e8 fis4 e8 fis8 ~ |
+	fis8 fis8 e8 f8 fis4 r4 |
 }
 
 gtrRiffTwo = \relative c, {
-	<e b' e>4 <e b' e>8 <e b' e>8 <e b' e>8 <g d' g>4 <a e' a>8 ~ |
-	<a e' a>8 <a e' a>8 <a e' a>8 <a e' a>8 <a e' a>8 <fis cis' fis>4 <b fis' b>8 ~ |
-	<b fis' b>8 <b fis' b>8 <b fis' b>8 <b fis' b>8 <b fis' b>8 <ais eis' ais>8 <b fis' b>8 <d a' d>8 |
-	r8 <b fis' b>8 r8 <ais eis' ais>8 r8 <a e' a>8 <g d' g>4 |
+	e4 e8 e8 e8 g4 a8 ~ |
+	a8 a8 a8 a8 a8 fis4 b8 ~ |
+	b8 b8 b8 b8 b8 ais8 b8 d8 |
+	r8 b8 r8 ais8 r8 a8 g4 |
 	
-	<e b' e>4 <e b' e>8 <e b' e>8 <e b' e>8 <g d' g>4 <a e' a>8 ~ |
-	<a e' a>8 <a e' a>8 <a e' a>8 <a e' a>8 <a e' a>8 fis4 <b fis' b>8 ~ |
-	<b fis' b>8 <b fis' b>8 <b fis' b>8 <b fis' b>8 <b fis' b>8 <ais eis' ais>8 <b fis' b>8 <d a' d>8 |
-	r8 <b fis' b>8 r8 <ais eis' ais>8 r8 <a e' a>8 r8 <g d' g>8 |
+	e4 e8 e8 e8 g4 a8 ~ |
+	a8 a8 a8 a8 a8 fis4 b8 ~ |
+	b8 b8 b8 b8 b8 ais8 b8 d8 |
+	r8 b8 r8 ais8 r8 a8 r8 g8 |
 	
-	<e b' e>4 <e b' e>8 <e b' e>8 <e b' e>8 <g d' g>4 <a e' a>8 ~ |
-	<a e' a>8 <a e' a>8 <a e' a>8 <a e' a>8 <a e' a>8 <fis cis' fis>4 <b fis' b>8 ~ |
-	<b fis' b>8 <b fis' b>8 <b fis' b>8 <b fis' b>8 <b fis' b>8 <ais eis' ais>8 <b fis' b>8 <d a' d>8 |
-	r8 <b fis' b>8 r8 <ais eis' ais>8 r8 <a e' a>8 <g d' g>4 |
+	e4 e8 e8 e8 g4 a8 ~ |
+	a8 a8 a8 a8 a8 fis4 b8 ~ |
+	b8 b8 b8 b8 b8 ais8 b8 d8 |
+	r8 b8 r8 ais8 r8 a8 g4 |
 
-	<e b' e>4 <e b' e>8 <e b' e>8 <e b' e>8 <g d' g>4 <a e' a>8 ~ |
-	<a e' a>8 <a e' a>8 <a e' a>8 <a e' a>8 <a e' a>8 <fis cis' fis>4 r8 |
-	<fis cis' fis>4 <fis cis' fis>8 <fis cis' fis>8 <fis cis' fis>8 <fis cis' fis>8 <fis cis' fis>8 <fis cis' fis>8 |
-	<fis cis' fis>8 <g d' g>8 <g d' g>8 <g d' g>8 <g d' g>4 r4 |
+	e4 e8 e8 e8 g4 a8 ~ |
+	a8 a8 a8 a8 a8 fis4 r8 |
+	fis4 fis8 fis8 fis8 fis8 fis8 fis8 |
+}
+
+gtrHarmony = \chordmode {
+	\override FretBoards.FretBoard #'size = #'0.8
+	%% gtrRiffOne %%
+	\repeat "unfold" 4 {
+		b2 s8 a4 d8 |
+		s2 s8 e4. |
+		fis1 |
+		s1 |
+	}
+	
+	%% gtrRiffTwo %%
+	e2 s8 g4 a8 |
+	s2 s8 fis4 b8 |
+	s2 s8 ais8 b8 d8 |
+	s8 b8 s8 ais8 s8 a8 g4 |
+
+	e2 s8 g4 a8 |
+	s2 s8 fis4 b8 |
+	s2 s8 ais8 b8 d8 |
+	s8 b8 s8 ais8 s8 a4 g8 |
+	
+	e2 s8 g4 a8 |
+	s2 s8 fis4 b8 |
+	s2 s8 ais8 b8 d8 |
+	s8 b8 s8 ais8 s8 a8 g4 |
+
+	e2 s8 g4 a8 |
+	s2 s8 fis4 s8 |
+	s1 |
+	s8 g4. s2 |
+	
 }
 
 gtr = \relative c {
-	\Key
+	\stopStaff \hideNotes
+	\skip 1*31 |
+	\startStaff \unHideNotes
+	\Key r2 r8 fis \( a ais |
+	b b b a b4 a8 d ~ |
+	d d:16 d cis d fis f e |
+	e,( fis) fis e fis4 e8 fis ~ |
+	fis b e,( f) fis \) fis \( a ais |
+	
+	b b b a b4 a8 d ~ |
+	d d:16 d cis d fis f e |
+	e,( fis) fis e fis4 e8 fis ~ |
+	fis b e,( f) fis4 \) r4 |
+	
+	\grace { b8 \glissando s2 } fis'8 fis8 fis8 f8( fis8) a4 fis8 ~ |
+	fis8 fis8 fis8( f8 fis8) a8 fis8 f8 |
+	f8( fis8) fis8 f8( fis8) a4 f8 ~ |
+	f8 fis8 a8 f8( fis8) a8 fis8 f8 |
+	
+	f8( fis8) a8 f8( fis8) a4 f8 ~ |
+	f8 fis8 a f8( fis8) a8 fis8 f8 |
+	f8( fis8) a8 f8( fis8) a4 b8 ~ |
+	b8 a8 fis8 a8 \ottava #1 r2 |
+}
 
+gtrStrum = \relative c {
+	\improvisationOn
 	\repeat "unfold" 4 { \gtrRiffOne }
+	\gtrRiffTwo \stopStaff \hideNotes
+	s1*17 %gtrSolo
+	\startStaff \unHideNotes
+	\gtrRiffTwo
+	\repeat "unfold" 2 { \gtrRiffOne }
+	s1*4 %gtrSolo
+	\gtrRiffOne
 	\gtrRiffTwo
 }
 
+GuitarStrum = {
+	\set Staff.midiInstrument = #"electric guitar (clean)"
+	<<
+		\new Voice \with {
+			\consists Pitch_squash_engraver
+		}
+		\gtrStrum
+	>>
+}
 
 %showLastLength = R1*10
 

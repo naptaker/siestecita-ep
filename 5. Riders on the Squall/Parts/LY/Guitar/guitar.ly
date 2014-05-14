@@ -85,7 +85,8 @@ gtrChorusB = \relative c'' {
 	e4. e4 e8 e e, |
 	c'4 c8 c c d c e, |
 	b'4. b4 c8 b e, |
-	bes'2 ~ bes8 \ottava #0 g,, a b |
+	bes'2 ~ bes8 \ottava #0 \set Staff.midiInstrument = #"electric guitar (clean)"
+		g,, a b |
 	
 	c4. <c e g c>4 <c e g c>8 <c e g c> e, |
 	g4. d'4. c4 |
@@ -176,10 +177,10 @@ gtr = \relative c {
 	\mark \markup { \bold Verse } \gtrVerse
 	\set Staff.midiInstrument = #"overdriven guitar"
 	\mark \markup { \bold Solo } \gtrMelodyA
-		\set Staff.midiInstrument = #"electric guitar (clean)"
+	\set Staff.midiInstrument = #"electric guitar (clean)"
 	\mark \markup { \bold Bridge } \gtrBridgeA
-	\set Staff.midiInstrument = #"overdriven guitar"
 	\mark \markup { \bold Chorus } \gtrChorusA
+	\set Staff.midiInstrument = #"overdriven guitar"
 	\mark \markup { \bold Solo } \gtrMelodyA
 	\set Staff.midiInstrument = #"electric guitar (clean)"
 	\mark \markup { \bold Verse } \gtrVerse

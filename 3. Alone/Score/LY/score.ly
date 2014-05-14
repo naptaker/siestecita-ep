@@ -22,8 +22,12 @@
 				\new Lyrics \lyricsto "voxOne" { \lyricsVerseOne }
 			>>
 			\new ChordNames = "chords" \gtrHarmony
-			\new FretBoards { \gtrHarmony }
+%			\new FretBoards { \gtrHarmony }
 %			\new StaffGroup <<
+				\new RhythmicStaff \with {
+					\RemoveEmptyStaves
+					\override VerticalAxisGroup #'remove-first = ##t
+				} { \Tempo \GuitarStrum }
 				\new Staff \with {
 					\RemoveEmptyStaves
 					\override VerticalAxisGroup #'remove-first = ##t
@@ -52,7 +56,7 @@
 	\layout {
 		indent = 0\in
 		\context { \Score
-%							 \consists #(bars-per-line-engraver '(8))
+							 \consists #(bars-per-line-engraver '(8))
 							 \scoreMagic
 		}
 		\context { \Staff \override StringNumber #'stencil = ##f }

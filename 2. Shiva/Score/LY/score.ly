@@ -17,9 +17,9 @@
 				\new Staff \with {
 					\RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
 				} {
-					\new Voice = "voxOne" { \Tempo \voxVerseOne }
+					\new Voice = "voxOne" { \Tempo \theMelody }
 				}	
-				\new Lyrics \lyricsto "voxOne" { \lyricsVerseOne }
+				\new Lyrics \lyricsto "voxOne" { \theLyrics }
 			>>
 
 			\new ChordNames = "chords" \gtrHarmony
@@ -39,12 +39,6 @@
 					\RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
 				}
 				{ \Tempo \clef bass \bassGuitar }
-%				\new TabStaff \with {
-%					\RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
-%				} {
-%					\set TabStaff.stringTunings = #bass-tuning
-%					\transpose c c, \bassGuitar
-%				}
 			>>
 		\new DrumStaff \with {
 			\RemoveEmptyStaves \override VerticalAxisGroup #'remove-first = ##t
@@ -68,7 +62,7 @@
 	\unfoldRepeats \articulate
 	<<
 		\new Staff {
-			\context Voice = "vocals" { \Tempo \voxVerseOne }
+			\context Voice = "vocals" { \Tempo \theMelody }
 		}
 		<<
 			\new StaffGroup <<

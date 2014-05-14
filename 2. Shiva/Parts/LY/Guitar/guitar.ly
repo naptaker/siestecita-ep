@@ -120,13 +120,22 @@ gtrHarmony = \chordmode {
 	d4 s b8 s4 fis8:min |
 	s8 fis s s4 s8 s s |
 	a4 s8 s s b4 fis8 |
-	s1 |
+	s1 | \break
 	a4 s8 s s b4 fis8 |
 	s1 |
 	a4 s8 s s b4 fis8 |
 	s1 | \pageBreak
 	
-	s1*16 | \pageBreak
+	s1*8 |
+	fis4 s e8 s f fis |
+	s8 s s e4 s8 s f |
+	fis4 s e8 s f fis |
+	s8 s s fis:6 s s s fis'' |
+	fis4 s e8 s f fis |
+	s8 s s e4 s8 s f |
+	fis4 s e8 s f fis |
+	s1 |
+	\pageBreak
 	
 	d4 s b8 s4 fis8:min |
 	s8 fis s s4 s8 s s |
@@ -211,28 +220,30 @@ gtrChorus = \relative c' {
 	fis8 fis8 fis8 fis8 fis8 eis8 e8 eis8 |
 	a4 a8 a8 a8 b4 fis8 ~ |
 	fis8 fis8 fis8 fis8 fis8 eis8 e8 eis8 |
-	a4 a8 a8 a8 b4 fis8 ~ | fis4 r4 r2 | \break
+	a4 a8 a8 a8 b4 fis8 ~ |
+	fis4 r4 r2 | \break
 	\improvisationOff
 }
 
 gtrSolo = \relative c'' {
 	\ottava #1
-	\repeat "unfold" 2 {
-		\acciaccatura b8 cis4 e8 cis8 c8 fis8 c8 b8 ~ |
-		b8 fis8 a8 ais4. r4 |
-		\appoggiatura b8 cis4 e8 cis8 c8 fis8 c8 b8 ~ |
-		b8 fis8 a8 fis4. r4 |
-	}
-	fis'4 a8 fis8 eis8 e8 c8 cis8 ~ |
-	cis2 r2 |
-	a4 a8 a8 c8 cis8 g8 fis8 ~ |
-	fis4 \ottava #0 r4 r2 |
-	\ottava #2
-	fis'4 a8 fis8 eis8 e'8 d8 cis8 ~ |
-	cis4. c4. r4 |
-	a4 c8 cis8 b8 a8 gis8 fis8 ~ |
-	fis4 \ottava #0 r4 r2 |
-	
+	\acciaccatura b8 cis4 e8 cis8 c8 fis8 c8 b8 ~ |
+	b8 fis8 a8 ais4. r4 |
+	\appoggiatura b8 cis4 e8 cis8 c8 fis8 c8 b8 ~ |
+	b8 fis8 a8 fis4. r4 |
+	\acciaccatura b8 cis4 e8 cis8 c8 fis8 c8 b8 ~ |
+	b8 fis8 a8 ais4. r4 |
+	\appoggiatura b8 cis4 e8 cis8 c8 fis8 c8 b8 ~ |
+	b8 fis8 a8 fis4. \ottava #0 r4 |
+%	fis'4 a8 fis8 eis8 e8 c8 cis8 ~ |
+%	cis2 r2 |
+%	a4 a8 a8 c8 cis8 g8 fis8 ~ |
+%	fis4 \ottava #0 r4 r2 |
+%	\ottava #2
+%	fis'4 a8 fis8 eis8 e'8 d8 cis8 ~ |
+%	cis4. c4. r4 |
+%	a4 c8 cis8 b8 a8 gis8 fis8 ~ |
+%	fis4 \ottava #0 r4 r2 |	
 }
 
 gtrEnding = \relative c' {
@@ -264,7 +275,7 @@ gtrEnding = \relative c' {
 	cis4 cis8 cis8 cis8 cis8 cis8 cis8 |
 	cis4 cis8 cis8 cis8 cis8 c8 c8 |
 	cis4 cis8 cis8 cis8 cis8 cis8 cis8 |
-	cis8 cis8 cis8 cis8 cis8 cis8 e4 |
+	cis8 cis8 cis8 cis8 cis8 cis8 e4 \bar "|."
 }
 
 gtr = \relative c {
@@ -276,6 +287,7 @@ gtr = \relative c {
 	R1*12 % \gtrChorus
 	\break
 	\gtrSolo
+	R1*8 % \gtrVerse
 	\break
 	R1*12 % \gtrChorus
 	\break
@@ -308,7 +320,8 @@ GuitarStrum = {
 			\gtrVerse
 			\pageBreak
 			\gtrChorus
-			R1*16
+			R1*8
+			\gtrVerse
 			\gtrChorus
 			R1*8
 			\gtrVerse
