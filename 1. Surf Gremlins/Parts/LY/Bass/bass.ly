@@ -9,7 +9,7 @@
 bgtr = \relative c {
 	\Key
 	
-	\bassIntro
+	\bassIntro \break
 	\bassChorus
 	\bassVerse
 	\bassSolo

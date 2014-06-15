@@ -2,28 +2,51 @@
 \include "../../Score/LY/header.ly"
 \include "../../Parts/LY/Bass/bass.ly"
 
-#(set-default-paper-size "arch a" 'portrait)
+#(set-global-staff-size 23)
+#(set-default-paper-size "letter" 'portrait)
 \header {
-	%	instrument = "Bass"
+	title = \markup { \fontsize #4  "Surf Gremlins" }
+	instrument = "Bass"
+	subtitle = \markup { \column { \center-align \fontsize #2 %{"from the Siestecita EP" \center-align \fontsize #2 %} "by Naptaker" } }
+	composer = "Music by E. Bailey"
+	poet = "Words by A. Smith"
+	arranger = \markup { \column { \right-align "Arr. by S. Albers, E. Bailey" \right-align  "P. Drum, and A. Smith" } }
+	tagline = ##f
+%	copyright = "© 2013 Naptaker"
 }
+
+\paper {
+	max-systems-per-page = 8
+	bottom-margin = .5\in
+}
+
+
+bassScore = {
+	\set Staff.midiInstrument = #"electric bass (finger)"
+	\global	\clef bass
+	<<
+		\relative c {
+			\Key
+			
+			\bassIntro \break
+			\bassChorus \break
+			\bassVerse \break
+			\bassSolo \break
+			\bassEnding
+		}
+	>>
+}
+
 
 \score {
 	<<
 		<<
-			\new StaffGroup <<
-				\set StaffGroup.instrumentName = #"Bass"
-				\new Staff {
-					\override StringNumber #'stencil = ##f
-					\compressFullBarRests
-					\override MultiMeasureRest #'expand-limit = #3
-					\Tempo \clef bass \bassGuitar
-				}
-				\new TabStaff {
-					\set TabStaff.stringTunings = #bass-tuning
-					\transpose c c,
-					\bassGuitar
-				}
-			>>
+			\new Staff {
+				\override StringNumber #'stencil = ##f
+				\compressFullBarRests
+				\override MultiMeasureRest #'expand-limit = #3
+				\Tempo \clef bass \bassScore
+			}
 		>>
 	>>
 

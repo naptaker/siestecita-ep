@@ -1,10 +1,10 @@
 stoneWank = \relative c {
 	bes'4 \bendOn \holdBend bes4.(
-		\once \override TabNoteHead #'transparent = ##t
+		% \once \override TabNoteHead #'transparent = ##t
 		c8) bes4 \bendOff |
 	bes4.^\prall bes4-> bes8 aes a |
 	bes4 \bendOn \holdBend bes4.(
-		\once \override TabNoteHead #'transparent = ##t
+		% \once \override TabNoteHead #'transparent = ##t
 		c8) bes4 \bendOff |
 	bes8 aes f aes4 f8 ees des |
 }
@@ -15,7 +15,7 @@ bassSolo = \relative c {
 	bes4 bes4. \glissando c8 bes4 |
 	bes8 aes f aes4 f8 ees des |
 
-	\set TabStaff.minimumFret = #4
+	% \set TabStaff.minimumFret = #4
 	bes4-. bes4 bes8 bes4 bes8 ~ |
 	bes8 bes bes bes4 bes8 aes bes |
 	des4 bes4 aes8( bes) des bes ~ |

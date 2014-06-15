@@ -15,7 +15,7 @@
 }
 
 #(set-global-staff-size 11)
-#(set-default-paper-size "arch a" 'portrait)
+#(set-default-paper-size "letter" 'portrait)
 \include "../../Parts/LY/Guitar/guitar.ly"
 \include "../../Parts/LY/Bass/bass.ly"
 \include "../../Parts/LY/Drums/drums.ly"

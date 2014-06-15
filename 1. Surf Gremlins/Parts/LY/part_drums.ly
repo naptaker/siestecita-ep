@@ -2,10 +2,24 @@
 \include "../../Score/LY/header.ly"
 \include "../../Parts/LY/Drums/drums.ly"
 
-#(set-default-paper-size "arch a" 'portrait)
+#(set-global-staff-size 23)
+#(set-default-paper-size "letter" 'portrait)
 \header {
-	% instrument = "Drums"
+	title = \markup { \fontsize #4  "Surf Gremlins" }
+	instrument = "Drums"
+	subtitle = \markup { \column { \center-align \fontsize #2 %{"from the Siestecita EP" \center-align \fontsize #2 %} "by Naptaker" } }
+	composer = "Music by E. Bailey"
+	poet = "Words by A. Smith"
+	arranger = \markup { \column { \right-align "Arr. by S. Albers, E. Bailey" \right-align  "P. Drum, and A. Smith" } }
+	tagline = ##f
+%	copyright = "© 2013 Naptaker"
 }
+
+\paper {
+	max-systems-per-page = 7
+	bottom-margin = .5\in
+}
+
 
 \score {
 	<<

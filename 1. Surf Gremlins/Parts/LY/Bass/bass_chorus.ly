@@ -2,21 +2,21 @@ voltaFirst = \markup { 1. \text \italic { play 1x and 4x only } }
 
 bassChorus = \relative c {
 	\set Score.repeatCommands = #'(start-repeat)
-	\set TabStaff.minimumFret = #13
+	% \set TabStaff.minimumFret = #13
 	bes'4. bes4^\prall bes8 bes4 |
-	\set TabStaff.minimumFret = #10
+	% \set TabStaff.minimumFret = #10
 	a4. g4 des'8 des4 |
 	bes4. bes4^\prall bes8 bes4 |
-	\set TabStaff.minimumFret = #8
+	% \set TabStaff.minimumFret = #8
 	aes4. f4 f8 f aes |
-	\set TabStaff.minimumFret = #12
+	% \set TabStaff.minimumFret = #12
 	bes4 bes8 bes d4 d4 |
-	\set TabStaff.minimumFret = #8
+	% \set TabStaff.minimumFret = #8
 	aes8 aes8 aes8 f4 f8 f aes8 |
-	\set TabStaff.minimumFret = #10
+	% \set TabStaff.minimumFret = #10
 	bes4 bes8 bes g4 g8 g |
 	\set Score.repeatCommands = #(list(list 'volta voltaFirst))
-	\set TabStaff.minimumFret = #8
+	% \set TabStaff.minimumFret = #8
 	g8( aes) aes f4 f8 f8 aes8 |
 
 	\once \override Score.RehearsalMark #'outside-staff-priority = #5000
