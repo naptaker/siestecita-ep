@@ -1,19 +1,3 @@
-% http://lsr.dsi.unimi.it/LSR/Snippet?id=664
-toCoda = {
-	% the align part
-	\once \override Score.RehearsalMark #'self-alignment-X = #RIGHT  
-	\once \override Score.RehearsalMark #'break-visibility = #begin-of-line-invisible
-	\once \override Score.RehearsalMark #'direction = #DOWN
-	%prefered size
-	\once \override Score.RehearsalMark #'font-size = #-2
-	\mark \markup {
-		\center-column {
-			\concat { \lower #1 { "D.S. al  " } { \musicglyph #"scripts.coda" } }
-			\italic { \lower #1 { \small "play both endings" } }
-		}
-	}
-}
-
 gtrVerse = \relative c {
 	\repeat volta 2 {
 		bes4 \deadNotesOn bes8 \deadNotesOff bes4

@@ -14,7 +14,7 @@ gtrSolo = \relative c {
 		f4\5) aes\4 \grace { \fretMagic aes8\4 \glissando s } bes8\4 des\3 bes\4
 			\bendOn \holdBend ees8\3->( ~ |
 		\once \override TabNoteHead #'transparent = ##t
-			f4\3) f\2-. \bendOff des8->\3( c\3 ces4\3) | \pageBreak
+			f4\3) f\2-. \bendOff des8->\3( c\3 ces4\3) |
 	}
 	
 	f8\2->( e\2 ees\2 e\2) f\2->( e\2 ees\2) f\2->( ~ |
@@ -26,5 +26,4 @@ gtrSolo = \relative c {
 	f\2->( e\2 ees\2 e\2 f\2) aes\1-> \parenthesize f\2 bes\1-> ~ |
 	bes4\1 des\1-. \grace { \fretMagic des16\1 \glissando s } ees4\1-\staccatissimo r
 	\bar "||"
-		% \stopStaff \hideNotes
 }

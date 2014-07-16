@@ -5,6 +5,10 @@
 	ragged-last = ##t
 }
 
+\header {
+	instrument = "Full Score"
+}
+
 \paper {
 %	system-system-spacing #'minimum-distance = #6
 %  system-system-spacing #'padding = #5
@@ -91,7 +95,7 @@
 	          s1*4 \break
 	          \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
 	            #'((Y-offset . 230))
-	          s1*4 \break
+	          s1*4 \pageBreak
 	          \overrideProperty Score.NonMusicalPaperColumn.line-break-system-details
 	            #'((Y-offset . 5))
 	          s1*4 \break

@@ -1,12 +1,3 @@
-%% http://lsr.di.unimi.it/LSR/Item?id=198
-%% see also http://lsr.di.unimi.it/LSR/Item?id=190
-theCoda = {
-	\once \override Score.RehearsalMark #'break-visibility = #begin-of-line-invisible
-	\once \override Score.RehearsalMark.font-size = #6 
-  \mark \markup { \musicglyph #"scripts.coda" }
-}
-
-
 voltaFirst = \markup { 1. \text \italic { play 1x and 4x only } }
 
 gtrChorus = \relative c {
