@@ -1,0 +1,162 @@
+\documentclass[twoside]{article}
+\usepackage{verse}
+\usepackage{pdfpages}
+\usepackage[papersize={8.5in, 11in}, top=.75in,bottom=.75in,inner=.25in,outer=0.25in,twoside]{geometry}
+\usepackage{textcomp}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{rotating}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Thanks to Harish Kumar on LaTeX Stack Exchange                              %
+% http://tex.stackexchange.com/a/76555                                        %
+%                                                                             %
+% pgfornament package -- http://altermundus.com/pages/tkz/ornament/index.html %
+%                                                                             %
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[object=vectorian]{pgfornament}
+\usepackage{tikz}
+\newcommand{\ornamentline}{%
+  \nointerlineskip\hspace{\fill}
+  {\resizebox{0.3\linewidth}{1ex}
+    {\pgfornament{85}
+  }\hspace{\fill}
+  \par\nointerlineskip\vspace{1\baselineskip}}
+}
+
+\usepackage{fancyhdr}
+\fancyhead{}
+\renewcommand{\headrulewidth}{0pt}
+% \newcommand{\score}{\fancyfoot[C]{\scriptsize \copyright\ 2012-2014 \href{http://naptaker.bandcamp.com}{Naptaker} \\ \href{https://github.com/naptaker/engraving}{github.com/naptaker/engraving}}}
+\newcommand{\score}{\fancyfoot[C]{\scriptsize \copyright\ 2012-2014 \href{http://naptaker.bandcamp.com}{Naptaker} \\ \href{http://naptakerrr.com}{naptakerrr.com}}}
+\newcommand{\blank}{\fancyfoot[C]{}}
+\fancyfoot[LO, RE] {\thepage}
+
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{afterpage}
+\usepackage{xcolor}
+
+\begin{document}
+  \pagenumbering{gobble}
+%  \pagecolor{blue}
+  \thispagestyle{empty} \mbox{}
+  \newpage %\pagecolor{blue}\afterpage{\nopagecolor}
+  \vspace*{2.25in}
+  \begin{center}
+    \includegraphics[height=4in]{title_image_black.png}
+  \end{center}
+  \vspace*{\fill}
+
+  \newpage \thispagestyle{empty} \mbox{}
+  \begin{titlepage}
+    \vspace*{2.25in}
+    \begin{center}
+      \includegraphics[height=4in]{title_image_black.png} \\
+      \vspace*{-.5in}
+      \ornamentline
+      \hspace*{3em}{\Large \begin{tabular}{rl} \hspace*{1em}
+        Engraving by & \hspace*{-1em} Eric Bailey \\
+          Artwork by & \hspace*{-1em} Preston Y. Drum \\
+            Music by & \hspace*{-1em} Naptaker
+      \end{tabular}}
+    \end{center}
+    \vspace*{\fill}
+  \end{titlepage}
+  \newpage \thispagestyle{empty} \mbox{}
+  \newpage \thispagestyle{empty} \mbox{}
+  \pagenumbering{arabic} \pagestyle{fancy} \setcounter{page}{0}
+
+  \score \includepdfset{pagecommand=\thispagestyle{fancy}}  
+  \includepdf[pages=-,]{../../Score/PDF/score.pdf}
+
+\newpage
+\settowidth{\versewidth}{If your music was a girl, I'd love to touch your chest,}
+\poemtitle{Surf Gremlins}
+\begin{verse}[\versewidth]
+%\flagverse{1.}
+Hey you, running around,\\
+You're sexy when you're running around.\\
+Hey, little Suzy, how I love your thighs.\\
+Never could I ever would I close my eyes.\\!
+
+%\flagverse{2.}
+New band, digging your sound.\\
+Little baby, don't you let me down.\\
+If your music was a girl, I'd love to touch your chest,\\
+Listen to your album, and forget the rest.\\
+This is crazy!\\
+This is insane!\\!
+
+%\flagverse{\textsc{chorus}}
+She's got a knife!\\
+She's got a knife.\\
+She's got a knife.\\
+She's got a knife, but still...\\!
+
+Will you be my girl?\\
+Will you be my girl?\\
+Will you be my--will you be my girl?\\
+Will you be my--will you be my girl?\\
+I'd be insane.\\!
+
+%\flagverse{3.}
+Look around, there's lots to love.\\
+Tell me, was it sent from above?\\
+Allah, Buddha, Lucifer, Yahweh, God,\\
+Whoever made the girl, I wanna touch your bod.\\
+And to leave her, I'd be insane.\\!
+
+%\flagverse{\textsc{chorus}}
+She's got a gun!\\
+She's got a gun.\\
+She's got a gun.\\
+She's got a gun, but still...\\!
+
+Will you be my girl?\\
+Will you be my girl?\\
+Will you be my---will you be my girl?\\
+Will you be my---will you be my girl?\\
+I'd be insane.\\!
+
+%\flagverse{4.}
+Hey you, running around,\\
+You're sexy when you're running around.\\
+Hey, little Suzy, how I love your thighs.\\
+Never could I ever would I close my eyes.\\!
+
+%\flagverse{5.}
+New band, digging your sound.\\
+Little baby, don't you let me down.\\
+If your music was a girl, I'd love to touch your chest,\\
+Listen to your album, and forget the rest.\\
+This is crazy!\\
+This is insane!
+\end{verse}
+
+  \newpage \pagenumbering{gobble} \blank \mbox{} \newpage \thispagestyle{empty}
+
+  \pagenumbering{arabic} \pagestyle{fancy} \setcounter{page}{6}
+  \score \includepdf[pages=-,]{../../Parts/PDF/part_guitar.pdf}
+
+  \score \includepdf[pages=-,]{../../Parts/PDF/part_bass.pdf}
+  \includepdf[pages=-,]{../../Parts/PDF/part_drums.pdf}
+  
+  \newpage \pagenumbering{gobble} \blank \mbox{} \newpage \thispagestyle{empty}
+
+  \vspace*{\fill}
+  \begin{center}
+    \textsc{\Huge Naptaker is}
+    \hspace*{-3.75em}{\Large \begin{tabular}{rl}
+         Andrew Smith & \hspace*{-1em} {\bf Vocals} \\
+          Eric Bailey & \hspace*{-1em} {\bf Guitar} \\
+           Sam Albers & \hspace*{-1em} {\bf Bass} \\
+      Preston Y. Drum & \hspace*{-1em} {\bf Drums}
+    \end{tabular}}
+  \end{center}
+  \vspace*{\fill}
+
+  \newpage \thispagestyle{empty} \mbox{}
+  \newpage \thispagestyle{empty} \mbox{}
+\end{document}
