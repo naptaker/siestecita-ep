@@ -1,0 +1,187 @@
+lalily V 0.9.1 @ 21.10.2015 17:46:16
+Includes: ---
+'lib/lalily/lalily/paper.lalily-default.ly'
+'lib/lalily/lalily/layout.lalily-default.ly'
+'lib/lalily/lalily/extensions/LSR646.ly'
+'lib/lalily/lalily/extensions/LSR654.ly'
+'lib/lalily/lalily/extensions/lyricAlign.ly'
+'lib/lalily/lalily/extensions/rhythm.ly'
+'lib/lalily/lalily/extensions/schemeFunctions.ly'
+'lib/lalily/lalily/extensions/shapes.ly'
+'lib/lalily/lalily/extensions/shortcuts.ly'
+'lib/lalily/lalily/extensions/titling-helper.ly'
+'lib/lalily/lalily/templates-base.ly'
+'lib/lalily/lalily/templates-drums.ly'
+'lib/lalily/lalily/templates-instrument.ly'
+'lib/lalily/lalily/templates-piano.ly'
+'lib/lalily/lalily/templates-tools.ly'
+'lib/lalily/lalily/templates-vocal.ly'
+'lib/lalily/lalily/templates.ly'
+
+Registry: ---
+[registry] lalily/header/copyright: http://naptakerrr.com Naptaker
+[registry] lalily/layout/default: (lalily default)
+[registry] lalily/midi/default: (lalily default)
+[registry] lalily/paper/default: (lalily default)
+[registry] lalily/paper/global-staff-size: 16
+[registry] lalily/person/arranger/pre: Arranged by
+[registry] lalily/person/composer/pre: Music by
+[registry] lalily/person/poet/pre: Words by
+[registry] lalily/runtime/loaded: (lib/lalily/lalily/paper.lalily-default.ly lib/lalily/lalily/layout.lalily-d ...
+[registry] lalily/runtime/logfile-written: surf_gremlins.log
+[registry] lalily/runtime/parser: #<Lily_parser #<Lily_lexer (#<module 111e52980>) > >
+[registry] lalily/runtime/parser/defs: ((setTransposedTemplate . #<Music function #<procedure #f (parser location t ...
+[registry] lalily/runtime/path: lib/lalily/lalily/lalily/
+[registry] lalily/runtime/store/path/variables/$EMPTY: ()
+[registry] lalily/runtime/store/path/variables/$LOCAL: ()
+[registry] lalily/runtime/store/path/variables/$UP: (..)
+[registry] lalily/runtime/verbose: #t
+[registry] lalily/store/persons/file: persons.txt
+
+Templates: ---
+[template] choral/group: *
+[template] choral/group/staff: *
+[template] choral/group/staff/lyrics: *
+[template] choral/lied/satb2: *
+[template] choral/lied/satb2b: *
+[template] choral/lied/satb4: *
+[template] choral/lied/staff: *
+[template] choral/lied/staff/lyrics: *
+[template] EKG: *
+[template] generic: *
+[template] global/voice: *
+[template] lalily/chords: *
+[template] lalily/drums: *
+[template] lalily/group: *
+[template] lalily/init/Voice: *
+[template] lalily/init/Voice/vocal: *
+[template] lalily/instrument: *
+[template] lalily/instrument/bass-guitar: *
+[template] lalily/instrument/cello: *
+[template] lalily/instrument/electric-guitar: *
+[template] lalily/instrument/english-horn: *
+[template] lalily/instrument/group: *
+[template] lalily/instrument/oboe: *
+[template] lalily/instrument/sax/alt: *
+[template] lalily/instrument/sax/bar: *
+[template] lalily/instrument/sax/sop: *
+[template] lalily/instrument/sax/ten: *
+[template] lalily/instrument/trombone: *
+[template] lalily/instrument/trumpet: *
+[template] lalily/instrument/tuba: *
+[template] lalily/instrument/viola: *
+[template] lalily/instrument/violin: *
+[template] lalily/Lyrics: *
+[template] lalily/mirror: *
+[template] lalily/piano: *
+[template] lalily/transpose: *
+[template] lalily/vocal: *
+[template] lalily/vocal/group: *
+[template] lalily/vocal/lyrics: *
+[template] lalily/vocal/two: *
+[template] lalily/vocal/voice: *
+[template] lead-sheet: *
+[template] lead-sheet/lyrics: *
+[template] lied/zeile: *
+[template] Lyrics: *
+[template] NOTFOUND: *
+[template] piano: *
+[template] Voice: *
+
+Template reference: ---
+[Template] lalily/drums
+[template-ref] down: need
+[template-ref] naptaker/siestecita/surf_gremlins/meta: need
+[template-ref] up: need
+
+[Template] lalily/group
+[template-ref] lalily/drums: template
+[template-ref] lalily/instrument/bass-guitar: template
+[template-ref] lalily/instrument/electric-guitar: template
+[template-ref] lalily/vocal: template
+
+[Template] lalily/init/Voice
+[template-ref] init: optional
+[template-ref] init-vocal: deep-optional
+
+[Template] lalily/init/Voice/vocal
+[template-ref] lalily/init/Voice: template
+
+[Template] lalily/instrument
+[template-ref] bass-global: deep-optional
+[template-ref] guitar-global: deep-optional
+[template-ref] meta: deep
+[template-ref] naptaker/siestecita/surf_gremlins/bass: need
+[template-ref] naptaker/siestecita/surf_gremlins/guitar: need
+[template-ref] naptaker/siestecita/surf_gremlins/guitar-strum: need
+
+[Template] lalily/instrument/bass-guitar
+[template-ref] lalily/instrument: template
+
+[Template] lalily/instrument/electric-guitar
+[template-ref] lalily/instrument: template
+
+[Template] lalily/vocal
+[template-ref] lalily/vocal/lyrics: template
+[template-ref] lalily/vocal/voice: template
+
+[Template] lalily/vocal/lyrics
+[template-ref] lyrics: need
+
+[Template] lalily/vocal/voice
+[template-ref] lalily/init/Voice/vocal: template
+[template-ref] meta: deep
+[template-ref] music: need
+
+
+Musik: ---
+[music] naptaker/siestecita/surf_gremlins/bass: 201/4
+[music] naptaker/siestecita/surf_gremlins/drums/down: 201/4
+[music] naptaker/siestecita/surf_gremlins/drums/up: 201/4
+[music] naptaker/siestecita/surf_gremlins/guitar: 201/4
+[music] naptaker/siestecita/surf_gremlins/guitar-strum: 50/1
+[music] naptaker/siestecita/surf_gremlins/meta: 185/4
+[music] naptaker/siestecita/surf_gremlins/vocals/lyrics: 9/1
+[music] naptaker/siestecita/surf_gremlins/vocals/music: 19/1
+
+Musik Default: ---
+[defaults] naptaker/siestecita/surf_gremlins: [lalily/group]
+  header
+   arranger=
+   arrangerlife=
+   arrangername=Naptaker
+   poet=
+   poetlife=
+   poetname=Andrew Smith
+   composer=
+   composerlife=
+   composername=Eric Bailey
+   title=Surf Gremlins
+  part
+   vocals
+    vocname=voxOne
+    template=(lalily vocal)
+    staff-mods=#<Context_mod ((assign midiInstrument tenor sax) (push VerticalAxisGroup #t remove-empty) (description Remove staves which are considered to be empty according
+to the list of interfaces set by @code{keepAliveInterfaces}.) (push VerticalAxisGroup #t remove-first))>
+   guitar
+    template=(lalily instrument electric-guitar)
+    staff-mods=#<Context_mod ((assign midiMaximumVolume 0.6) (push VerticalAxisGroup #t remove-empty) (description Remove staves which are considered to be empty according
+to the list of interfaces set by @code{keepAliveInterfaces}.))>
+   guitar-strum
+    template=(lalily instrument electric-guitar)
+    staff-context=RhythmicStaff
+    staff-mods=#<Context_mod ((assign instrumentName Guitar) (assign midiMaximumVolume 0.6) (push VerticalAxisGroup #t remove-empty) (description Remove staves which are considered to be empty according
+to the list of interfaces set by @code{keepAliveInterfaces}.) (push VerticalAxisGroup #t remove-first))>
+   bass
+    template=(lalily instrument bass-guitar)
+    staff-mods=#<Context_mod ((push VerticalAxisGroup #t remove-empty) (description Remove staves which are considered to be empty according
+to the list of interfaces set by @code{keepAliveInterfaces}.) (push VerticalAxisGroup #t remove-first))>
+   drums
+    template=(lalily drums)
+    staff-mods=#<Context_mod ((assign drumStyleTable #<hash-table 8/31>))>
+
+
+Musik Quotes: ---
+
+Edition Modifications: ---
+
