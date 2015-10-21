@@ -1,0 +1,6 @@
+[submodule "lib/lalily"]
+	path = lib/lalily
+	url = git@github.com:yurrriq/lalily.git
+[submodule "common"]
+	path = common
+	url = git@github.com:naptaker/common.git
