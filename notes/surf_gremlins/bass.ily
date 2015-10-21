@@ -1,4 +1,4 @@
-\include "common/bend.ly"
+\include "common/bend.ily"
 
 instrumentName = "Bass"
 

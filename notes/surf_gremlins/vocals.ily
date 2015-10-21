@@ -1,4 +1,4 @@
-\include "common/bend.ly"
+\include "common/bend.ily"
 \include "globals/surf_gremlins.ily"
 
 instrumentName = "Vocals"
