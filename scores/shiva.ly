@@ -11,16 +11,16 @@
 #(set-registry-val '(lalily header copyright)
   #{ \markup { \with-url #"http://naptakerrr.com" "Naptaker" } #})
 
-\setMusicFolder naptaker.siestecita.alone
+\setMusicFolder naptaker.siestecita.shiva
 
 \optionsInit opts
 
-%% \include "notes/alone/vocals.ily"
-\include "notes/alone/guitar.ily"
-%% \include "notes/alone/bass.ily"
-%% \include "notes/alone/drums.ily"
+%% \include "notes/shiva/vocals.ily"
+\include "notes/shiva/guitar.ily"
+%% \include "notes/shiva/bass.ily"
+%% \include "notes/shiva/drums.ily"
 
-\setDefaultTemplate naptaker.siestecita.alone lalily.group #opts
+\setDefaultTemplate naptaker.siestecita.shiva lalily.group #opts
 
 \paper {
   %% #(set-paper-size "arch a" 'landscape)
@@ -54,7 +54,7 @@
 ""
 %}
 
-\setTitle "Alone"
+\setTitle "Shiva"
 \setComposer #'sam.albers
 \setPoet #'andrew.smith
 \setArranger #'naptaker

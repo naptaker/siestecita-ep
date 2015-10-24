@@ -1,36 +1,36 @@
 \include "common/bend.ily"
-\include "globals/alone.ily"
+\include "globals/shiva.ily"
 
 instrumentName = "Guitar"
 
 guitarNotes    = {
   \compressFullBarRests
   \global
-  \include "notes/alone/guitar/intro.ily"
+  \include "notes/shiva/guitar/intro.ily"
   \repeat volta 3 {
     R1*8  % verse
     R1*12 % chorus
   }
   \alternative {
-    { \include "notes/alone/guitar/solo.ily"   }
+    { \include "notes/shiva/guitar/solo.ily"   }
     %% R1*8  % verse
     %% R1*12 % chorus
-    { \include "notes/alone/guitar/bridge.ily" }
+    { \include "notes/shiva/guitar/bridge.ily" }
     { R1*12 \noBreak                           } % bass solo
   }
   %% \pageBreak
   %% \hideMultiRests
   %% R1*12 % chorus
-  \include "notes/alone/guitar/ending.ily"
+  \include "notes/shiva/guitar/ending.ily"
   \bar "|."
 }
 
 rhythmNotes    = \relative c {
   R1*10 % intro
   \repeat volta 3 {
-    \include "notes/alone/guitar/verse.ily"
-    \include "notes/alone/guitar/chorus.ily"
-    \include "notes/alone/guitar/chorus/ending.ily"
+    \include "notes/shiva/guitar/verse.ily"
+    \include "notes/shiva/guitar/chorus.ily"
+    \include "notes/shiva/guitar/chorus/ending.ily"
   }
   \alternative {
     { R1*8  } % solo

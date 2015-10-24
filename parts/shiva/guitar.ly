@@ -1,9 +1,9 @@
 \include "common/version.ily"
 \include "common/preamble.ily"
-\include "headers/alone.ily"
-\include "globals/alone.ily"
-%% \include "notes/alone/guitar.ily"
-\include "scores/alone.ly"
+\include "headers/shiva.ily"
+\include "globals/shiva.ily"
+%% \include "notes/shiva/guitar.ily"
+\include "scores/shiva.ly"
 
 partNotes = { \clef "treble_8" \Key \guitarNotes }
 midiNotes = \guitarNotes
