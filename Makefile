@@ -14,15 +14,18 @@ SOUNDFONT  = $(realpath ./soundfont.sf2)
 	    $(LILYPOND) -o $* -
 	test -f $*.pdf && mv $$_ output/pdf/; test -f $*.mid && mv $$_ output/MIDI/
 
-%.pdf: parts/surf_gremlins/%.ily layout/part.ily
+surf_gremlins-%.pdf: parts/surf_gremlins/%.ily layout/part.ily
 	cat $< $(addsuffix .ily, $(join layout/part, $(if $(findstring drums, $<), /drums, ))) | \
 	$(LILYPOND) -o $* -; test -f $*.pdf && mv $$_ output/pdf/
 
-.PHONY: sg
-sg: scores/surf_gremlins.ly
-	$(LILYPOND) -I lib/lalily scores/surf_gremlins.ly
-	test -f surf_gremlins.pdf && mv $$_ output/pdf/
-	test -f surf_gremlins.mid && mv $$_ output/midi/
+alone-%.pdf: parts/alone/%.ily layout/part.ily
+	cat $< $(addsuffix .ily, $(join layout/part, $(if $(findstring drums, $<), /drums, ))) | \
+	$(LILYPOND) -o $* -; test -f $*.pdf && mv $$_ output/pdf/
+
+%: scores/%.ly
+	$(LILYPOND) -I lib/lalily $<
+	test -f $*.pdf && mv $$_ output/pdf/
+	test -f $*.mid && mv $$_ output/midi/
 	mv *.log log
 
 # $(FLUIDSYNTH) Output/WAV/$*.wav "$(SOUNDFONT)" Output/MIDI/$*.mid
