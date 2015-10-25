@@ -1,4 +1,4 @@
-lalily V 0.9.1 @ 24.10.2015 18:09:08
+lalily V 0.9.1 @ 24.10.2015 20:23:43
 Includes: ---
 'lib/lalily/lalily/paper.lalily-default.ly'
 'lib/lalily/lalily/layout.lalily-default.ly'
@@ -29,7 +29,7 @@ Registry: ---
 [registry] lalily/person/poet/pre: Words by
 [registry] lalily/runtime/loaded: (lib/lalily/lalily/paper.lalily-default.ly lib/lalily/lalily/layout.lalily-d ...
 [registry] lalily/runtime/logfile-written: shiva.log
-[registry] lalily/runtime/parser: #<Lily_parser #<Lily_lexer (#<module 105e27980>) > >
+[registry] lalily/runtime/parser: #<Lily_parser #<Lily_lexer (#<module 106444980>) > >
 [registry] lalily/runtime/parser/defs: ((setTransposedTemplate . #<Music function #<procedure #f (parser location t ...
 [registry] lalily/runtime/path: lib/lalily/lalily/lalily/
 [registry] lalily/runtime/store/path/variables/$EMPTY: ()
@@ -90,22 +90,29 @@ Templates: ---
 
 Template reference: ---
 [Template] lalily/group
+[template-ref] lalily/instrument/bass-guitar: template
 [template-ref] lalily/instrument/electric-guitar: template
 
 [Template] lalily/instrument
+[template-ref] bass-global: deep-optional
 [template-ref] guitar-global: deep-optional
 [template-ref] meta: deep
+[template-ref] naptaker/siestecita/shiva/bass: need
 [template-ref] naptaker/siestecita/shiva/guitar: need
 [template-ref] naptaker/siestecita/shiva/guitar-strum: need
+
+[Template] lalily/instrument/bass-guitar
+[template-ref] lalily/instrument: template
 
 [Template] lalily/instrument/electric-guitar
 [template-ref] lalily/instrument: template
 
 
 Musik: ---
-[music] naptaker/siestecita/shiva/guitar: 80/1
-[music] naptaker/siestecita/shiva/guitar-strum: 80/1
-[music] naptaker/siestecita/shiva/meta: 46/1
+[music] naptaker/siestecita/shiva/bass: 405/4
+[music] naptaker/siestecita/shiva/guitar: 92/1
+[music] naptaker/siestecita/shiva/guitar-strum: 405/4
+[music] naptaker/siestecita/shiva/meta: 92/1
 
 Musik Default: ---
 [defaults] naptaker/siestecita/shiva: [lalily/group]
@@ -129,6 +136,10 @@ to the list of interfaces set by @code{keepAliveInterfaces}.))>
     template=(lalily instrument electric-guitar)
     staff-context=RhythmicStaff
     staff-mods=#<Context_mod ((assign instrumentName Guitar) (assign midiMaximumVolume 0.6) (push VerticalAxisGroup #t remove-empty) (description Remove staves which are considered to be empty according
+to the list of interfaces set by @code{keepAliveInterfaces}.) (push VerticalAxisGroup #t remove-first))>
+   bass
+    template=(lalily instrument bass-guitar)
+    staff-mods=#<Context_mod ((push VerticalAxisGroup #t remove-empty) (description Remove staves which are considered to be empty according
 to the list of interfaces set by @code{keepAliveInterfaces}.) (push VerticalAxisGroup #t remove-first))>
 
 
