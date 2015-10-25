@@ -8,3 +8,7 @@
 	path = old
 	url = git@github.com:naptaker/siestecita-ep.git
 	branch = master
+[submodule "output"]
+	path = output
+	url = git@github.com:naptaker/siestecita-ep.git
+	branch = output
