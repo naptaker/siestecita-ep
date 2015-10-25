@@ -1,4 +1,4 @@
-lalily V 0.9.1 @ 21.10.2015 17:46:16
+lalily V 0.9.1 @ 24.10.2015 21:34:27
 Includes: ---
 'lib/lalily/lalily/paper.lalily-default.ly'
 'lib/lalily/lalily/layout.lalily-default.ly'
@@ -29,7 +29,7 @@ Registry: ---
 [registry] lalily/person/poet/pre: Words by
 [registry] lalily/runtime/loaded: (lib/lalily/lalily/paper.lalily-default.ly lib/lalily/lalily/layout.lalily-d ...
 [registry] lalily/runtime/logfile-written: surf_gremlins.log
-[registry] lalily/runtime/parser: #<Lily_parser #<Lily_lexer (#<module 111e52980>) > >
+[registry] lalily/runtime/parser: #<Lily_parser #<Lily_lexer (#<module 10b899980>) > >
 [registry] lalily/runtime/parser/defs: ((setTransposedTemplate . #<Music function #<procedure #f (parser location t ...
 [registry] lalily/runtime/path: lib/lalily/lalily/lalily/
 [registry] lalily/runtime/store/path/variables/$EMPTY: ()
@@ -140,7 +140,7 @@ Musik: ---
 [music] naptaker/siestecita/surf_gremlins/drums/up: 201/4
 [music] naptaker/siestecita/surf_gremlins/guitar: 201/4
 [music] naptaker/siestecita/surf_gremlins/guitar-strum: 50/1
-[music] naptaker/siestecita/surf_gremlins/meta: 185/4
+[music] naptaker/siestecita/surf_gremlins/meta: 169/4
 [music] naptaker/siestecita/surf_gremlins/vocals/lyrics: 9/1
 [music] naptaker/siestecita/surf_gremlins/vocals/music: 19/1
 
