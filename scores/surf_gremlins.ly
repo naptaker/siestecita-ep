@@ -1,6 +1,5 @@
 \include "common/version.ily"
 \include "common/preamble.ily"
-%% \include "parts/defaults.ily"
 \include "lalily.ly"
 
 #(set-global-staff-size 11)

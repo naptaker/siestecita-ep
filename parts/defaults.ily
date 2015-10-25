@@ -2,7 +2,8 @@
 #(set-default-paper-size "letter" 'portrait)
 
 \paper {
-  bottom-margin = .5\in
+  indent               = 0\in
+  bottom-margin        = .5\in
   max-systems-per-page = 8
 }
 

@@ -1,4 +1,4 @@
-lalily V 0.9.1 @ 24.10.2015 21:53:46
+lalily V 0.9.1 @ 24.10.2015 21:52:33
 Includes: ---
 'lib/lalily/lalily/paper.lalily-default.ly'
 'lib/lalily/lalily/layout.lalily-default.ly'
@@ -28,8 +28,8 @@ Registry: ---
 [registry] lalily/person/composer/pre: Music by
 [registry] lalily/person/poet/pre: Words by
 [registry] lalily/runtime/loaded: (lib/lalily/lalily/paper.lalily-default.ly lib/lalily/lalily/layout.lalily-d ...
-[registry] lalily/runtime/logfile-written: surf_gremlins.log
-[registry] lalily/runtime/parser: #<Lily_parser #<Lily_lexer (#<module 10bc7a980>) > >
+[registry] lalily/runtime/logfile-written: guitar.log
+[registry] lalily/runtime/parser: #<Lily_parser #<Lily_lexer (#<module 108ead980>) > >
 [registry] lalily/runtime/parser/defs: ((setTransposedTemplate . #<Music function #<procedure #f (parser location t ...
 [registry] lalily/runtime/path: lib/lalily/lalily/lalily/
 [registry] lalily/runtime/store/path/variables/$EMPTY: ()
@@ -89,60 +89,23 @@ Templates: ---
 [template] Voice: *
 
 Template reference: ---
-[Template] lalily/drums
-[template-ref] down: need
-[template-ref] naptaker/siestecita/surf_gremlins/meta: need
-[template-ref] up: need
-
 [Template] lalily/group
-[template-ref] lalily/drums: template
-[template-ref] lalily/instrument/bass-guitar: template
 [template-ref] lalily/instrument/electric-guitar: template
-[template-ref] lalily/vocal: template
-
-[Template] lalily/init/Voice
-[template-ref] init: optional
-[template-ref] init-vocal: deep-optional
-
-[Template] lalily/init/Voice/vocal
-[template-ref] lalily/init/Voice: template
 
 [Template] lalily/instrument
-[template-ref] bass-global: deep-optional
 [template-ref] guitar-global: deep-optional
 [template-ref] meta: deep
-[template-ref] naptaker/siestecita/surf_gremlins/bass: need
 [template-ref] naptaker/siestecita/surf_gremlins/guitar: need
 [template-ref] naptaker/siestecita/surf_gremlins/guitar-strum: need
-
-[Template] lalily/instrument/bass-guitar
-[template-ref] lalily/instrument: template
 
 [Template] lalily/instrument/electric-guitar
 [template-ref] lalily/instrument: template
 
-[Template] lalily/vocal
-[template-ref] lalily/vocal/lyrics: template
-[template-ref] lalily/vocal/voice: template
-
-[Template] lalily/vocal/lyrics
-[template-ref] lyrics: need
-
-[Template] lalily/vocal/voice
-[template-ref] lalily/init/Voice/vocal: template
-[template-ref] meta: deep
-[template-ref] music: need
-
 
 Musik: ---
-[music] naptaker/siestecita/surf_gremlins/bass: 201/4
-[music] naptaker/siestecita/surf_gremlins/drums/down: 201/4
-[music] naptaker/siestecita/surf_gremlins/drums/up: 201/4
 [music] naptaker/siestecita/surf_gremlins/guitar: 201/4
 [music] naptaker/siestecita/surf_gremlins/guitar-strum: 50/1
-[music] naptaker/siestecita/surf_gremlins/meta: 169/4
-[music] naptaker/siestecita/surf_gremlins/vocals/lyrics: 9/1
-[music] naptaker/siestecita/surf_gremlins/vocals/music: 19/1
+[music] naptaker/siestecita/surf_gremlins/meta: 185/4
 
 Musik Default: ---
 [defaults] naptaker/siestecita/surf_gremlins: [lalily/group]
@@ -158,11 +121,6 @@ Musik Default: ---
    composername=Eric Bailey
    title=Surf Gremlins
   part
-   vocals
-    vocname=voxOne
-    template=(lalily vocal)
-    staff-mods=#<Context_mod ((assign midiInstrument tenor sax) (push VerticalAxisGroup #t remove-empty) (description Remove staves which are considered to be empty according
-to the list of interfaces set by @code{keepAliveInterfaces}.) (push VerticalAxisGroup #t remove-first))>
    guitar
     template=(lalily instrument electric-guitar)
     staff-mods=#<Context_mod ((assign midiMaximumVolume 0.6) (push VerticalAxisGroup #t remove-empty) (description Remove staves which are considered to be empty according
@@ -172,13 +130,6 @@ to the list of interfaces set by @code{keepAliveInterfaces}.))>
     staff-context=RhythmicStaff
     staff-mods=#<Context_mod ((assign instrumentName Guitar) (assign midiMaximumVolume 0.6) (push VerticalAxisGroup #t remove-empty) (description Remove staves which are considered to be empty according
 to the list of interfaces set by @code{keepAliveInterfaces}.) (push VerticalAxisGroup #t remove-first))>
-   bass
-    template=(lalily instrument bass-guitar)
-    staff-mods=#<Context_mod ((push VerticalAxisGroup #t remove-empty) (description Remove staves which are considered to be empty according
-to the list of interfaces set by @code{keepAliveInterfaces}.) (push VerticalAxisGroup #t remove-first))>
-   drums
-    template=(lalily drums)
-    staff-mods=#<Context_mod ((assign drumStyleTable #<hash-table 8/31>))>
 
 
 Musik Quotes: ---
