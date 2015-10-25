@@ -1,17 +1,5 @@
 \relative c {
-%{
-  \override Staff.TimeSignature #'stencil = ##f
-  \time 8/1
-  \autoBeamOff
-  \repeat volta 2 {
-    r\longa
-  }
-  \time 4/4
-  \autoBeamOn
-
-  R1*12 % \break
-%}
-
+  R1*8 % bass riff
   \repeat volta 2 {
     fis2            ~ fis8 cis8 fis8 c8 ~ |
     c1                                  ~ |

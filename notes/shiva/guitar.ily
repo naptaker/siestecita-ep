@@ -13,16 +13,12 @@ guitarNotes    = {
   }
   \alternative {
     { \include "notes/shiva/guitar/solo.ily"   }
-    %% R1*8  % verse
-    %% R1*12 % chorus
     { \include "notes/shiva/guitar/bridge.ily" }
-    { R1*12 \noBreak                           } % bass solo
+    { R1*8 % drum vamp
+      R1*8 % bass vamp
+      \noBreak                                 }
   }
-  %% \pageBreak
-  %% \hideMultiRests
-  %% R1*12 % chorus
   \include "notes/shiva/guitar/ending.ily"
-  \bar "|."
 }
 
 rhythmNotes    = \relative c {
@@ -33,17 +29,26 @@ rhythmNotes    = \relative c {
     \include "notes/shiva/guitar/chorus/ending.ily"
   }
   \alternative {
-    { R1*8  } % solo
-    { R1*8  } % bridge
-    { R1*12 } % bass solo
+    { R1*8 } % solo
+    { R1*8 } % bridge
+    { R1*8   % drum vamp
+      R1*8 } % bass vamp
   }
-  R1*22 % ending
-  %% chorus
-  %% a4 a8 a8 a8 b4 fis8 ~ |
-  %% \override Staff.TimeSignature #'stencil = ##f
-  %% \time 1/4
-  %% fis4
-  %% \bar "|."
+  R1*30 % ending
+
+  d4        d4        b8   b4        fis8 ~ |
+  fis8 fis8 fis8 fis4      e8   fis8 e8     |
+  a4        a8   a8   a8   b4        fis8 ~ |
+  fis8 fis8 fis8 fis8 fis8 eis8 e8   eis8   |
+  d'4       d4        b8   b4        fis8 ~ |
+  fis8 fis8 fis8 fis4      e8   fis8 e8     |
+  a4        a8   a8   a8   b4      fis8 ~ |
+  fis8 fis8 fis8 fis8 fis8 eis8 e8 eis8   |
+  a4        a8   a8   a8   b4      fis8 ~ |
+  \override Staff.TimeSignature #'stencil = ##f
+  \time 1/4
+  fis4
+  \bar "|."
 }
 
 #(if (defined? 'lalilyCreate)
@@ -66,6 +71,6 @@ rhythmNotes    = \relative c {
       \RemoveEmptyStaves
       \override VerticalAxisGroup #'remove-first = ##t
     }
-    \putMusic guitar-strum \rhythmNotes
+    \putMusic guitar-strum { \improvisationOn \rhythmNotes }
   #}
   #{ #})
